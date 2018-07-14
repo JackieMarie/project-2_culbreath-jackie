@@ -1,0 +1,28 @@
+// Colors Variables Settings Stylesheet
+// ========================================
+
+$green: #2f9c03;
+$darkgrey: #040f00;
+$yellow: #f1c400;
+$white: #fff;
+$blue: #001F60;
+$grey: #c5c5c5;
+$errordk: #9c032f; // Error Alert Font
+$errorlt: rgba(61.2%,1.2%,18.4%, .2); // Error Alert Background
+$successdk: #206c02; // Success Alert for Font
+$successlt: rgba(12.5%,42.4%,0.8%, .3); // Success Alert for Background
+
+
+// Main Palette List
+$colors: (
+'green': $green,
+'darkgrey': $darkgrey,
+'yellow': $yellow,
+'white': $white,
+'blue': $blue,
+'grey': $grey,
+'errordk': $errordk,
+'errorlt': $errorlt,
+'successdk': $successdk,
+'successlt': $successlt,
+);

@@ -1,0 +1,17 @@
+// Alert Component Stylesheet
+// ========================================
+
+.alert {
+
+  &--error {
+    @include alert($errorlt, $errordk);
+  }
+
+  &--success {
+    @include alert($successlt, $successdk);
+  }
+
+  &--notification {
+    @include alert($grey, $darkgrey);
+  }
+}

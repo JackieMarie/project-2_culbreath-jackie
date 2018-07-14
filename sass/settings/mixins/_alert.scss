@@ -1,0 +1,14 @@
+// Alert Mixin Settings Stylesheet
+// ========================================
+
+@mixin alert ($background-value, $color-value) {
+  width: 100%;
+  max-width: 425px;
+  background-color: $background-value;
+  color: $color-value;
+  padding: $spacer-m;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+// media query for size

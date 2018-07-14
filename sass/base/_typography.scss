@@ -1,0 +1,76 @@
+// Base Typography Stylesheet
+// This is where your base typography will go
+// ========================================
+
+h2, h3, h4, h5, h6 {
+  color: $darkgrey;
+}
+
+h1 {
+  @include font-type(acumin-pro, normal, 500);
+  font-size: 54px;
+  padding: $spacer-s;
+}
+
+h2 {
+  @include font-type(acumin-pro, normal, 500);
+  font-size: 48px;
+  padding: $spacer-s;
+}
+
+h3 {
+  @include font-type(acumin-pro, normal, 500);
+  font-size: 36px;
+  padding: $spacer-s;
+  margin-bottom: $spacer-xs;
+}
+
+h4 {
+  @include font-type(acumin-pro, normal, 500);
+  font-size: 24px;
+  padding: $spacer-s;
+  margin-bottom: $spacer-xs;
+}
+
+h5 {
+  @include font-type(acumin-pro, normal, 700);
+  font-size: 14px;
+  padding: $spacer-s;
+}
+
+h6 {
+  @include font-type(acumin-pro, normal, 700);
+  font-size: 12px;
+  padding: $spacer-s;
+}
+
+p {
+  @include font-type(acumin-pro, normal, 300);
+  font-size: 20px;
+}
+
+a {
+  @include font-type(acumin-pro-wide, normal, 600);
+  font-size: 14px;
+  color: $darkgrey;
+  text-decoration: none;
+
+  &:hover {
+  color: $green;
+  text-decoration: underline;
+  }
+}
+
+.small-font {
+  @include font-type(Acumin Pro, normal, 300);
+  font-size: 12px;
+}
+
+.small-buttons {
+  @include font-type(Acumin Pro, normal, 700);
+  font-size: 14px;
+}
+
+.italic {
+  font-style: italic;
+}

@@ -1,0 +1,55 @@
+// Form Elements Stylesheet
+// ========================================
+
+// Label Styling -- Delete this if you are not using a label
+label {
+  @include font-type(Acumin Pro, normal, 300);
+  font-size: 16px;
+  color: $blue;
+}
+
+// Basic Form Input Styling
+input[type=text] {
+  @include font-type(Acumin Pro, normal, 300);
+  font-size: 16px;
+  color: $darkgrey;
+  width: 100%;
+  padding: $spacer-s;
+  border: 2px solid $green;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 6px 0 10px 0;
+  resize: vertical;
+}
+input[type=email] {
+  @include font-type(Acumin Pro, italic, 300);
+  font-size: 16px;
+  color: $green;
+  width: 100%;
+  padding: $spacer-s;
+  border: 2px solid $green;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 6px 0 10px 0;
+  resize: vertical;
+
+  &::placeholder {
+    color: $errordk;
+    background-color: $errorlt;
+  }
+}
+
+// Select Form Input Styling
+
+select {
+  @include font-type(Acumin Pro, normal, 300);
+  font-size: 16px;
+  color: $blue;
+  width: 100%;
+  padding: $spacer-s;
+  border: 2px solid $green;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 6px 0 10px 0;
+  resize: vertical;
+}

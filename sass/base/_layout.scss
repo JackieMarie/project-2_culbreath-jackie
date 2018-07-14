@@ -1,0 +1,134 @@
+// Base Layout Stylesheet
+// This is where your layout of the project will go
+// ========================================
+
+body {
+  background-color: $white;
+  font-family: 'Acumin Pro';
+  color: $darkgrey;
+  min-width: 320px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: $spacer-s;
+  flex-flow: wrap;
+  background-color: $yellow;
+
+  &__logo {
+    width: 30%;
+    padding-bottom: $spacer-m;
+  }
+
+  &__nav {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: $spacer-s;
+    text-align: center;
+    // flex-wrap: wrap;
+    // background-color: $yellow;
+
+    &__list {
+      list-style-type: none;
+
+      &__item {
+        text-decoration: none;
+        display: inline-flex;
+        padding: $spacer-s;
+      }
+    }
+  }
+}
+
+.main {
+  padding: $spacer-m;
+
+  &__section {
+    margin: $spacer-lg $reset-0;
+
+    &--index {
+      text-align: center;
+    }
+  }
+}
+
+.item-container {
+  margin: $spacer-m $reset-0;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: $spacer-s;
+}
+
+.item-container--colors {
+  margin: $spacer-m $reset-0;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: $spacer-s;
+}
+
+.color__list {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: $spacer-lg;
+  margin-top: $spacer-s;
+  flex-wrap: nowrap;
+
+  &__item {
+    padding: $spacer-s;
+
+    &__card {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      border: 1px solid $grey;
+      margin-bottom: $spacer-s;
+      display: inline-flex;
+      padding: $spacer-s;
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin-top: $spacer-m;
+  width: 100%;
+  background-color: $darkgrey;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+  padding: $spacer-m;
+
+  //Need to change link color and hover state for dark background-color
+  // &__nav {
+  //   display: inline-flex;
+  //   flex-direction: row;
+  //   justify-content: center;
+  //   width: 100%;
+  //   padding: $spacer-s;
+  //   text-align: center;
+  //   // flex-wrap: wrap;
+  //   // background-color: $yellow;
+  //
+  //   &__list {
+  //     list-style-type: none;
+  //
+  //     &__item {
+  //       text-decoration: none;
+  //       display: inline-flex;
+  //       padding: $spacer-s;
+  //     }
+  //   }
+  // }
+}
