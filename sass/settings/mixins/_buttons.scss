@@ -1,16 +1,14 @@
 // Button Mixin Settings Stylesheet
 // ========================================
 
-@mixin button ($background-value, $color-value) {
-  width: 100px;
+@mixin button-format ($background-value, $color-value, $border-color) {
   background-color: $background-value;
   color: $color-value;
-  padding: $spacer-s;
+  border-color: $border-color-value;
   font-family: $primary-font;
-  font-size: 12px;
-  font-weight: 300;
-  border: 3px solid $green;
-  width: 100px;
-  border-radius: 5px;
+  width: 125px;
+  padding: $spacer-m;
+  border: 3px solid;
+  border-radius: 25px;
   text-align: center;
 }

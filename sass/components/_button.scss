@@ -3,14 +3,8 @@
 .button {
 
   &--primary {
-    width: 125px;
-    padding: $spacer-m;
-    background-color: $white;
-    color: $green;
-    border: 3px solid $green;
-    border-radius: 25px;
-    text-align: center;
-    margin-right: $spacer-s;
+    @include button-format($white, $green, $green)
+      margin-right: $spacer-s;
 
     &:hover {
       background-color: $green;
@@ -19,13 +13,7 @@
   }
 
   &--secondary {
-    width: 125px;
-    padding: $spacer-m;
-    background-color: $white;
-    color: $darkgrey;
-    border: 3px solid $darkgrey;
-    border-radius: 25px;
-    text-align: center;
+    @include button-format($white, $darkgrey, $darkgrey)
     margin-right: $spacer-s;
 
     &:hover {
@@ -35,13 +23,7 @@
   }
 
   &--disabled {
-    width: 125px;
-    padding: $spacer-m;
-    background-color: $grey;
-    color: $white;
-    border: 3px solid $grey;
-    border-radius: 25px;
-    text-align: center;
+    @include button-format($grey, $white, $grey)
     opacity: .9;
   }
 }

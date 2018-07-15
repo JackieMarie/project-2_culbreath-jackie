@@ -2,14 +2,15 @@
 // ========================================
 
 // Label Styling -- Delete this if you are not using a label
-label {
+
+.label { // NOTE: These should have class names -1 point
   @include font-type(Acumin Pro, normal, 300);
   font-size: 16px;
   color: $blue;
 }
 
 // Basic Form Input Styling
-input[type=text] {
+.input__text[type=text] { // NOTE: These should have class names -1 point
   @include font-type(Acumin Pro, normal, 300);
   font-size: 16px;
   color: $darkgrey;
@@ -21,7 +22,7 @@ input[type=text] {
   margin: 6px 0 10px 0;
   resize: vertical;
 }
-input[type=email] {
+.input__email[type=email] { // NOTE: These should have class names -1 point
   @include font-type(Acumin Pro, italic, 300);
   font-size: 16px;
   color: $green;
@@ -41,7 +42,7 @@ input[type=email] {
 
 // Select Form Input Styling
 
-select {
+.input__select { // NOTE: These should have class names -1 point
   @include font-type(Acumin Pro, normal, 300);
   font-size: 16px;
   color: $blue;

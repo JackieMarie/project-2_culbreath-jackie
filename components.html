@@ -64,7 +64,7 @@
           </div>
         </section>
 
-          <section class="main__section">
+        <section class="main__section">
           <h3>Chips</h3>
           <div class="item-container">
             <div class="chip">
@@ -93,33 +93,35 @@
           </div>
         </div>
       </div>
-        </section>
+      </section>
 
         <!-- This is where your form elements go -->
-        <section class="main__section">
-          <h3>Form Elements</h3>
-          <div class="item-container">
+      <section class="main__section">
+        <h3>Form Elements</h3>
+        <div class="item-container">
+          <form>
             <fieldset>
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Name*" required />
+              <label class="label" for="name">Your Name</label>
+              <input class="input__text" type="text" id="name" name="name" placeholder="Name*" required />
             </fieldset>
           </div>
           <div class="item-container">
             <fieldset>
-              <label for="email">Error State</label>
-              <input type="email" id="email" name="email" placeholder="Please fill out this field*" required />
+              <label class="label" for="email">Error State</label>
+              <input class="input__email" type="email" id="email" name="email" placeholder="Please fill out this field*" required />
             </fieldset>
           </div>
           <div class="item-container">
             <fieldset>
-              <label for="select">Select Contact Preference</label>
-              <select name="contactmethod" id="contactmethod">
-								<option selected>Contact Preference?</option>
-									<option value="phone">Phone</option>
-									<option value="email">Email</option>
-									<option value="no_preference">No Preference</option>
-							</select>
+              <label class="label" for="select">Select Contact Preference</label>
+              <select class="input__select" name="contactmethod" id="contactmethod">
+                <option selected>Contact Preference?</option>
+                  <option value="phone">Phone</option>
+                  <option value="email">Email</option>
+                  <option value="no_preference">No Preference</option>
+              </select>
             </fieldset>
+          </form>
           </div>
         </section>
 
