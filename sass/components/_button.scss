@@ -3,7 +3,7 @@
 .button {
 
   &--primary {
-    @include button-format($white, $green, $green);
+    @include button($white, $green, $green);
 
     &:hover {
       background-color: $green;
@@ -12,7 +12,7 @@
   }
 
   &--secondary {
-    @include button-format($white, $darkgrey, $darkgrey);
+    @include button($white, $darkgrey, $darkgrey);
     margin-right: $spacer-s;
 
     &:hover {
@@ -22,7 +22,7 @@
   }
 
   &--disabled {
-    @include button-format($grey, $white, $grey);
+    @include button($grey, $white, $grey);
     opacity: .9;
   }
 }

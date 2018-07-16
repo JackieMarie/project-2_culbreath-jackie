@@ -1,7 +1,7 @@
 // Button Mixin Settings Stylesheet
 // ========================================
 
-@mixin button-format($background-value, $color-value, $border-color) {
+@mixin button($background-value, $color-value, $border-value) {
   background-color: $background-value;
   color: $color-value;
   border-color: $border-value;
