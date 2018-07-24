@@ -9,22 +9,26 @@ body {
   min-width: 320px;
 }
 
+.container {
+  min-height: 100vh;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   // width: 100%;
-  padding: $spacer-s;
   flex-flow: wrap;
   flex-wrap: wrap;
   justify-content: flex-start;
   // background-color: $yellow;
 
   &__logo {
-    width: 100%;
-    padding-bottom: $spacer-m;
-    diplay: inline-flex;
+    width: 25%;
+    max-width: 50%;
+    padding-left: $spacer-s;
     align-items: flex-start;
     background-color: $yellow;
+    position: absolute;
   }
 
   &__nav {
@@ -33,7 +37,6 @@ body {
     justify-content: flex-end;
     width: 100%;
     padding: $spacer-s;
-    // text-align: center;
     background-color: $yellow;
     // flex-wrap: wrap;
     // background-color: $yellow;
@@ -45,13 +48,14 @@ body {
         text-decoration: none;
         display: inline-flex;
         padding: $spacer-s;
+        align-items: flex-end;
       }
     }
   }
 }
 
-.main {
-  padding: $spacer-m;
+.main__section {
+
 
   &__section {
     margin: $spacer-lg $reset-0;
@@ -115,7 +119,6 @@ body {
   flex-flow: wrap;
   padding: $spacer-m;
 
-  // TODO: Need to change link color and hover state for dark background-color
   &__nav {
     display: block;
     flex-direction: column;
