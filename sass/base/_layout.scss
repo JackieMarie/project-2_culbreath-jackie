@@ -15,19 +15,18 @@ body {
 
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   // width: 100%;
   flex-flow: wrap;
   flex-wrap: wrap;
   justify-content: flex-start;
-  // background-color: $yellow;
+  background-color: $yellow;
 
   &__logo {
     width: 25%;
-    max-width: 50%;
-    padding-left: $spacer-s;
+    max-width: 175px;
+    padding: $spacer-s;
     align-items: flex-start;
-    background-color: $yellow;
     position: absolute;
   }
 
@@ -36,10 +35,8 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
-    padding: $spacer-s;
+    padding: $spacer-m;
     background-color: $yellow;
-    // flex-wrap: wrap;
-    // background-color: $yellow;
 
     &__list {
       list-style-type: none;
@@ -56,55 +53,28 @@ body {
 
 .main__section {
 
+  &__textover {
+    z-index: 1;
+    margin-top: 250px;
+    margin: auto;
+  }
 
-  &__section {
-    margin: $spacer-lg $reset-0;
-
-    &--index {
-      text-align: center;
-    }
+  &__image--large {
+    z-index: -1;
+    width: 100%;
+    max-width: 1920px;
   }
 }
 
-.item-container {
-  margin: $spacer-m $reset-0;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: $spacer-s;
-}
-
-.item-container--colors {
-  margin: $spacer-m $reset-0;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: $spacer-s;
-}
-
-.color__list {
-  display: inline-flex;
-  width: 100%;
-  margin-bottom: $spacer-lg;
-  margin-top: $spacer-s;
-  flex-wrap: nowrap;
-
-  &__item {
-    padding: $spacer-s;
-
-    &__card {
-      width: 100px;
-      height: 100px;
-      border-radius: 10px;
-      border: 1px solid $grey;
-      margin-bottom: $spacer-s;
-      display: inline-flex;
-      padding: $spacer-s;
-    }
-  }
-}
+// TODO: Create into article class
+// .item-container {
+//   margin: $spacer-m $reset-0;
+//   display: inline-flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   padding: $spacer-s;
+// }
 
 .footer {
   position: fixed;
