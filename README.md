@@ -21,4 +21,4 @@ I did not use any resources outside of the lectures and my notes on this assignm
 I have reviewed the list of deductions for this project and in the syllabus.
 
 ### Comments
-For Part 3, I added my index files, started the navigation, added images, and added navigation to the footer. I am behind due to a work situation where I had to cover for someone unexpectedly and work a lot of extra hours the last week. Hope to catch up by this coming weekend.
+For Part 3, I added my html files, started the navigation, added images, and added navigation to the footer. I am behind due to a work situation where I had to cover for someone unexpectedly and work a lot of extra hours the last week. Hope to catch up by this coming weekend.
