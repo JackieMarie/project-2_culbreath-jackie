@@ -24,13 +24,9 @@
           </ul>
         </nav>
       </header>
-
-      <section class="main__section">
-        <h1 class="main__section__textover">Prevent breakdowns and costly repairs...</h1>
-        <img src = "images/preventbreakdowns_cargo.jpg" alt = "Broken down car image" class = "main__section__image--large"/>
+      <section class="landing">
+        <h1 class="landing__title text--white">Prevent breakdowns and costly repairs...</h1>
       </section>
-
-
       <footer class="footer">
       <!-- // TODO: Need to change link color and hover state for dark background-color-->
         <img src = "images/logo_white.svg" alt = "carGO logo" class = "footer__logo"/>
@@ -50,5 +46,11 @@
         <p class="text--white small-font">This is the footer</p>
       </footer>
     <div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script> -->
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+    $('.landing').backstretch("images/preventbreakdowns_cargo.jpg");
+    </script>
   </body>
 </html>
