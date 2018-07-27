@@ -8,10 +8,10 @@ $link-font: 'acumin-pro-wide', sans-serif;
 
 // Text Colors Map
 $type-colors: (
-  'white':    ( white ),
-  'grey':     ( grey ),
-  'darkgrey': ( darkgrey ),
-  'blue':   ( blue ),
-  'green':    ( green ),
-  'yellow':   ( yellow ),
+  'white':    ( $white ),
+  'grey':     ( $grey ),
+  'darkgrey': ( $darkgrey ),
+  'blue':   ( $blue ),
+  'green':    ( $green ),
+  'yellow':   ( $yellow ),
 );

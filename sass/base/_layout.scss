@@ -66,6 +66,10 @@ body {
   }
 }
 
+.main {
+  display: grid;
+
+}
 // TODO: Create into article class
 // .item-container {
 //   margin: $spacer-m $reset-0;
@@ -79,10 +83,8 @@ body {
 .footer {
   // position: fixed;
   // bottom: 0;
-  margin-top: $spacer-s;
   width: 100%;
   background-color: $darkgrey;
-  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -108,8 +110,9 @@ body {
     padding: $spacer-s;
   }
 
-  &__caveat {
+  &__disclaimer {
     width: 100%;
+    text-align: center;
   }
   &__nav {
     display: block;
