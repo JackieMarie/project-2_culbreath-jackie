@@ -85,16 +85,22 @@ body {
 //   padding: $spacer-s;
 // }
 
-.main--contact {
+.main__contact {
   width: 95%;
   min-width: 320px;
   max-width: 890px;
-  margin: 0% auto;
+  margin: auto;
+  margin-top: $spacer-m;
+  margin-bottom: $spacer-m;
   padding: $spacer-lg 0 $spacer-lg 0;
   opacity: .9;
 
-  &__form {
+  &__title {
+    text-align: center;
+  }
 
+  &__intro {
+    text-align: center;
   }
 }
 
@@ -104,7 +110,7 @@ body {
   width: 100%;
   background-color: $darkgrey;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   flex-flow: wrap;
   // padding: $spacer-m;
@@ -112,12 +118,11 @@ body {
   &__logo {
     width: 15%;
     max-width: 100px;
-    align-items: center;
-    diplay: flex;
+    align-self: center;
   }
 
   &__heading {
-    diplay: flex;
+    diplay: block;
     align-self: center;
   }
 
@@ -132,14 +137,20 @@ body {
     width: 100%;
     text-align: center;
   }
+
   &__nav {
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     padding: $spacer-s;
     text-align: center;
     // flex-wrap: wrap;
+
+    // @include media($large) {
+    //   flex-direction: row;
+    //   display: inline-flex;
+    // }
 
     &__list {
       list-style-type: none;

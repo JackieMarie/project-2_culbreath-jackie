@@ -3,7 +3,7 @@
 html {
   font-size: 1rem;
 
-  @include media($medium) {
+  @include media($large) {
     font-size: 1.25rem;
   }
 }
@@ -20,49 +20,49 @@ h1 {
 
 h2 {
   @include font-type($primary-font, normal, 500);
-  font-size: 48px;
+  font-size: 2.4rem;
   padding: $spacer-s;
 }
 
 h3 {
   @include font-type($primary-font, normal, 500);
-  font-size: 36px;
+  font-size: 1.8rem;
   padding: $spacer-s;
   margin-bottom: $spacer-xs;
 }
 
 h4 {
   @include font-type($primary-font, normal, 500);
-  font-size: 24px;
+  font-size: 1.2rem;
   padding: $spacer-s;
   margin-bottom: $spacer-xs;
 }
 
 h5 {
   @include font-type($primary-font, normal, 700);
-  font-size: 14px;
+  font-size: .85rem;
   padding: $spacer-s;
 }
 
 h6 {
-  @include font-type($primary-font, normal, 700);
-  font-size: 12px;
+  @include font-type($primary-font, normal, 400);
+  font-size: .7rem;
   padding: $spacer-s;
 }
 
 p {
   @include font-type($primary-font, normal, 500);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 button {
   @include font-type($link-font, normal, 700);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 a {
   @include font-type($link-font, normal, 500);
-  font-size: 16px;
+  font-size: .85rem;
   color: $darkgrey;
   text-decoration: none;
   cursor: pointer;
@@ -75,12 +75,12 @@ a {
 
 .small-font {
   @include font-type($primary-font, normal, 300);
-  font-size: 12px;
+  font-size: .75rem;
 }
 
 .small-buttons {
   @include font-type($primary-font, normal, 700);
-  font-size: 14px;
+  font-size: .875rem;
 }
 
 .italic {
