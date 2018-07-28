@@ -3,46 +3,53 @@
 
 // Label Styling -- Delete this if you are not using a label
 
-.label { // NOTE: These should have class names -1 point
-  @include font-type(Acumin Pro, normal, 300);
+.label {
+  @include font-type($primary-font, normal, 900);
   font-size: 16px;
   color: $blue;
+  margin-left: $spacer-m;
 }
 
 // Basic Form Input Styling
-.input__text[type=text] { // NOTE: These should have class names -1 point
-  @include font-type(Acumin Pro, normal, 300);
+
+.input[type=text],.input[type=email],.input[type=tel],textarea, select {
+  @include font-type($primary-font, normal, 300);
   font-size: 16px;
   color: $darkgrey;
-  width: 100%;
+  width: 95%;
   padding: $spacer-s;
   border: 2px solid $green;
   border-radius: 4px;
   box-sizing: border-box;
-  margin: 6px 0 10px 0;
-  resize: vertical;
-}
-.input__email[type=email] { // NOTE: These should have class names -1 point
-  @include font-type(Acumin Pro, italic, 300);
-  font-size: 16px;
-  color: $green;
-  width: 100%;
-  padding: $spacer-s;
-  border: 2px solid $green;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin: 6px 0 10px 0;
+  margin: $spacer-m $spacer-m;
   resize: vertical;
 
   &::placeholder {
-    color: $errordk;
-    background-color: $errorlt;
+    font-style: italic;
+    font-size: 14px;
   }
 }
+// .input__email[type=email] {
+//   @include font-type(Acumin Pro, italic, 300);
+//   font-size: 16px;
+//   color: $green;
+//   width: 100%;
+//   padding: $spacer-s;
+//   border: 2px solid $green;
+//   border-radius: 4px;
+//   box-sizing: border-box;
+//   margin: 6px 0 10px 0;
+//   resize: vertical;
+//
+//   &::placeholder {
+//     color: $errordk;
+//     background-color: $errorlt;
+//   }
+// }
 
 // Select Form Input Styling
 
-.input__select { // NOTE: These should have class names -1 point
+.input__select {
   @include font-type(Acumin Pro, normal, 300);
   font-size: 16px;
   color: $blue;

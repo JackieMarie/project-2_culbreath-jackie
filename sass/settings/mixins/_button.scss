@@ -5,9 +5,9 @@
   background-color: $background-value;
   color: $color-value;
   border-color: $border-value;
-  font-family: $primary-font;
   padding: $spacer-s $spacer-xlg;
   border: 3px solid;
-  border-radius: 25px;
+  border-radius: 20px;
   text-align: center;
+  cursor: pointer;
 }

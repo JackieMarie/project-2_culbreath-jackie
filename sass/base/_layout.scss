@@ -86,6 +86,23 @@ body {
 //   padding: $spacer-s;
 // }
 
+.main--contact {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: $spacer-lg 0 $spacer-lg 0;
+  opacity: .9;
+}
+
+#form {
+  // width: 90%;
+  // max-width: 900px;
+
+  &__button {
+    margin-left: $spacer-m;
+  }
+}
+
 .footer {
   // position: fixed;
   // bottom: 0;
