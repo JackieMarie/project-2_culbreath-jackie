@@ -52,17 +52,23 @@ body {
 }
 
 .landing {
-  height: 100vh;
+  height: 75vh;
+  background-color: $white;
+  background-blend-mode: screen;
+  display: flex;
+  flex-direction: column;
 
   &__title {
-      margin: auto;
-      text-align: center;
+      margin-top: auto;
+      padding-top: $spacer-xxl;
+      align-self: center;
   }
 
-  &__image--large {
-    z-index: -1;
-    width: 100%;
-    max-width: 1920px;
+  &__logo {
+    width: 75%;
+    max-width: 500px;
+    align-self: flex-end;
+    padding: 0 $spacer-xlg $spacer-xxl 0;
   }
 }
 
