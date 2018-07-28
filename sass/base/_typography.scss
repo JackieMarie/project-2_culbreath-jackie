@@ -1,5 +1,12 @@
 // Base Typography Stylesheet
 // ========================================
+html {
+  font-size: 1rem;
+
+  @include media($medium) {
+    font-size: 1.25rem;
+  }
+}
 
 h2, h3, h4, h5, h6 {
   color: $darkgrey;
@@ -7,7 +14,7 @@ h2, h3, h4, h5, h6 {
 
 h1 {
   @include font-type($primary-font, normal, 500);
-  font-size: 54px;
+  font-size: 2.7rem;
   padding: $spacer-s;
 }
 
@@ -78,4 +85,9 @@ a {
 
 .italic {
   font-style: italic;
+}
+
+.cargo {
+  font-style: italic;
+  font-weight: 900;
 }

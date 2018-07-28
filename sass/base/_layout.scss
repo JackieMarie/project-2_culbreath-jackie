@@ -4,13 +4,12 @@
 
 body {
   background-color: $white;
-  font-family: 'Acumin Pro';
-  color: $darkgrey;
-  min-width: 320px;
+  font-family: $primary-font;
 }
 
 .container {
   min-height: 100vh;
+  min-width: 320px;
 }
 
 .header {
@@ -87,19 +86,15 @@ body {
 // }
 
 .main--contact {
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
+  width: 95%;
+  min-width: 320px;
+  max-width: 890px;
+  margin: 0% auto;
   padding: $spacer-lg 0 $spacer-lg 0;
   opacity: .9;
-}
 
-#form {
-  // width: 90%;
-  // max-width: 900px;
+  &__form {
 
-  &__button {
-    margin-left: $spacer-m;
   }
 }
 

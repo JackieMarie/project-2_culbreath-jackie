@@ -2,9 +2,9 @@
 
 var form = document.getElementById('form')
 var nameInput = document.getElementById('name');
-var phoneInput = document.getElementById('phone');
+var telephoneInput = document.getElementById('telephone');
 var emailInput = document.getElementById('email');
-var methodInput = document.getElementById('method');
+var contactmethodInput = document.getElementById('contactmethod');
 var messageInput = document.getElementById('message');
 var submit = document.getElementById('submit');
 var reset = document.getElementById('reset');
@@ -19,6 +19,6 @@ console.log(nameInput);
 
   addEvent(nameInput, 'input', function(e) {
     console.log('hello')
-  })
+  });
 
 })();
