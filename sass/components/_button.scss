@@ -5,7 +5,6 @@
   &--primary {
     @include button($white, $green, $green);
     @include font-type($primary-font, normal, 700);
-    margin: $spacer-s $spacer-m;
 
     &:hover {
       background-color: $green;
@@ -16,7 +15,6 @@
   &--secondary {
     @include button($white, $darkgrey, $darkgrey);
     @include font-type($primary-font, normal, 700);
-    margin: $spacer-s $spacer-m;
 
     &:hover {
       background-color: $darkgrey;
@@ -28,6 +26,5 @@
     @include button($grey, $white, $grey);
     @include font-type($primary-font, normal, 700);
     opacity: .9;
-    margin: $spacer-s $spacer-m;
   }
 }

@@ -55,11 +55,6 @@ p {
   font-size: 1.25rem;
 }
 
-button {
-  @include font-type($link-font, normal, 700);
-  font-size: 1.25rem;
-}
-
 a {
   @include font-type($link-font, normal, 500);
   font-size: .85rem;

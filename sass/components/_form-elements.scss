@@ -6,7 +6,7 @@
 .label {
   @include font-type($primary-font, normal, 900);
   font-size: 16px;
-  color: $blue;
+  color: $darkgrey;
   margin: $spacer-m $spacer-lg;
 
   @include media($medium) {
@@ -34,4 +34,8 @@
     font-style: italic;
     font-size: 14px;
   }
+}
+
+.input[type=submit],.input[type=reset] {
+  margin:$spacer-s $spacer-s;
 }
