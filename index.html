@@ -23,45 +23,34 @@
             </li>
           </ul>
         </nav>
-        <div class="modal">
-          <a href class="modal__trigger-btn" id="modal_trigger">SIGN IN</a>
+        <div>
+          <a href class="modal__trigger-btn">SIGN IN</a>
           <div class="modal" aria-hidden="true">
-            <div class="modal__overlay">
-              <div class="modal__container">
-                <div class="modal__body">
-                  <a href="#" role="button" class="modal__close">
-                    x
-                  </a>
-                  <header class="modal__header">
-                    <h3 class="title">Login</h3>
-                    <p class="modal-intro">Fill in your username and password.</p>
-                  </header>
-                  <form>
-                    <label for="email">Username</label>
-                    <input name="name" type="text" placeholder="username or email" class="input modal__input" />
-                    <label for="email">Password</label>
-                    <input name="password" type="text" placeholder="password" class="input modal__input"/>
-                    <button class="button--primary">Submit</button>
-                    <button class="button--secondary">Cancel</button>
-                  </form>
-                  <div>
-                    <p class="modal-content">Modal Content goes here.</p>
-                    <div class="modal__actions">
-                      <ul class="modal__actions-list">
-                        <li class="modal__actions-item">
-                          <button class="button--default button--full modal__close" class="button--secondary">Cancel</button>
-                        </li>
-                        <li class="modal__actions-item">
-                          <button class="button--danger button--full">Delete</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+            <div class="modal__container">
+              <a href="#" role="button" class="modal__close">
+                  X
+                </a>
+                <header class="modal__header">
+                  <h3>Login</h3>
+                  <p>Fill in your username and password.</p>
+                </header>
+                <form>
+                  <label for="email">Username</label>
+                  <input name="name" type="text" placeholder="username or email" class="input modal__input" />
+                  <label for="email">Password</label>
+                  <input name="password" type="text" placeholder="password" class="input modal__input"/>
+                  <ul class="modal__action-list">
+                    <li class="modal__action-list__item">
+                        <button class="button--primary">Submit</button>
+                    </li>
+                    <li class="modal__action-list__item">
+                        <button class="button--secondary modal__close">Cancel</button>
+                    </li>
+                  </ul>
+                </form>
               </div>
             </div>
           </div>
-        </div>
       </header>
       <section class="landing">
         <h1 class="landing__title text--white">PREVENT BREAKDOWNS AND COSTLY REPAIRS...</h1>
@@ -136,7 +125,7 @@
     <script>
     $('.landing').backstretch("images/preventbreakdowns_cargo.jpg");
     </script>
-    <scripte src="js/modal.js"></scripte>
+    <script src="js/main.js"></script>
   </body>
 </html>
 =
