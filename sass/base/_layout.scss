@@ -72,20 +72,27 @@ body {
 }
 
 .main {
-  display: grid;
+  // display: grid;
+  // margin: $spacer-m $reset-0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: $spacer-s;
 
+  &__article {
+    align-items: flex-start;
+    width: 50%;
+
+    &__article__image {
+      width: 50%;
+      max-width: 600px;
+      margin: auto;
+    }
+  }
 }
-// TODO: Create into article class
-// .item-container {
-//   margin: $spacer-m $reset-0;
-//   display: inline-flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   padding: $spacer-s;
-// }
 
-.main__contact {
+.contact__main {
   width: 95%;
   min-width: 320px;
   max-width: 890px;

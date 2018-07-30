@@ -23,13 +23,11 @@
             </li>
           </ul>
         </nav>
-        <div>
+        <!-- <div> TODO: NEED TO GET THIS TO WORK!!!
           <a href class="modal__trigger-btn">SIGN IN</a>
-          <div class="modal" aria-hidden="true">
-            <div class="modal__container">
-              <a href="#" role="button" class="modal__close">
-                  X
-                </a>
+            <div class="modal" aria-hidden="true">
+              <div class="modal__container">
+              <img src="images/icon_close.svg" alt="Modal Close Icon" class="modal__close"/>
                 <header class="modal__header">
                   <h3>Login</h3>
                   <p>Fill in your username and password.</p>
@@ -50,7 +48,7 @@
                 </form>
               </div>
             </div>
-          </div>
+          </div> -->
       </header>
       <section class="landing">
         <h1 class="landing__title text--white">PREVENT BREAKDOWNS AND COSTLY REPAIRS...</h1>
@@ -62,10 +60,10 @@
           <p>
             Owner's manuals? Car maintenance schedules? Who reads them?! But breaking down by the side of the road is never fun. Plus, ignoring maintenance can cause extensive, costly damage to your car.
           </p>
-          <img src="images/tools_cargo.jpg" alt="Mechanic's Wrenches" />
+          <img src="images/tools_cargo.jpg" alt="Mechanic's Wrenches" class="main__article__image" />
         </article>
         <article class="main__article">
-          <img src="images/car_engine-small.jpg" alt="Car Engine" / />
+          <img src="images/car_engine-small.jpg" class="main__article__image" alt="Car Engine" / />
           <h3 class="text--green">But what if something could track car maintenance for you?</h3>
           <p>
             Now you can have your car send alerts when it is time for maintenance. Or if there is a mechanical problem! How? With carGO! carGO is a car maintenance application that will read the owner's manual for you. carGO communicates with your car's electonic systems and provides valuable real time and projected owner information. It tracks your maintenance schedules and mechanical issues!
@@ -76,7 +74,7 @@
           <p>
             Deferred maintenance to car systems leads to breakdowns and more costly repairs. With carGO you can see your car system status at a glance! Our caution status lets you know to start saving money and planning a time that works for you to have your car in the shop.
           </p>
-          <img src="images/mobileapp.svg" alt="carGO Mobile Dashboard" / />
+          <img src="images/mobileapp.svg" alt="carGO Mobile Dashboard" class="mobileimg" / />
         </article>
         <acticle class="background--yellow main__article--cta">
           <h2>What are you waiting for?!</h2>
@@ -121,11 +119,11 @@
     <div>
       <script src="js/jquery-3.3.1.min.js"></script>
      <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script> -->
+    <script src="js/main.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script>
     $('.landing').backstretch("images/preventbreakdowns_cargo.jpg");
     </script>
-    <script src="js/main.js"></script>
   </body>
 </html>
 =

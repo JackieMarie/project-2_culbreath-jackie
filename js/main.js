@@ -30,17 +30,17 @@ var $modalTrigger = $('.modal__trigger-btn'),
   $modalClose = $('.modal__close'),
   $modalActive = '.modal--active';
 
-  $modalTrigger.on('click', function(e) {
-    e.preventDefault();
-    console.log('hello');
+$modalTrigger.on('click', function(e) {
+  e.preventDefault();
+  console.log('hello');
 
-    $(this).siblings($modal).addClass($modalActive);
-    $modal.attr('aria-hidden', 'false');
-  });
+  $(this).siblings($modal).addClass($modalActive);
+  $modal.attr('aria-hidden', 'false');
+});
 
-  $modalClose.on('click', function(e) {
-    e.preventDefault();
-    console.log('I am closing');
+$modalClose.on('click', function(e) {
+  e.preventDefault();
+  console.log('I am closing');
 
-    $(this).parents($modal).removeClass($modalActive);
-  });
+  $(this).parents($modal).removeClass($modalActive);
+});

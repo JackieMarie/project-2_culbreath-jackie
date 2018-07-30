@@ -24,9 +24,9 @@
           </ul>
         </nav>
       </header>
-      <section class="main__section">
-        <h1 class="main__section__textover">Car Maintenance App</h1>
-        <img src = "images/mechanic_cargo.jpg" alt="Broken down car image" class="main__section__image--large"/>
+      <section class="landing">
+        <h1 class="landing__title text--white">LEARN MORE ABOUT ...</h1>
+        <img src="images/logo_white.svg" alt="carGO Logo" class="landing__logo"/ />
       </section>
       <footer class="footer">
         <img src = "images/logo_white.svg" alt="carGO logo" class="footer__logo"/>
@@ -56,5 +56,12 @@
         </div>
       </footer>
     <div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+    $('.landing').backstretch("images/mechanic_cargo.jpg");
+    </script>
   </body>
 </html>
