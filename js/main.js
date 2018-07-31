@@ -25,22 +25,56 @@ console.log(nameInput);
 
 // Modal
 
-var $modalTrigger = $('.modal__trigger-btn'),
-  $modal = $('.modal'),
-  $modalClose = $('.modal__close'),
-  $modalActive = '.modal--active';
+// var $modalTrigger = $('.modal__trigger-btn'),
+//   $modal = $('.modal'),
+//   $modalClose = $('.modal__close'),
+//   $modalActive = '.modal--active';
+//
+// $modalTrigger.on('click', function(e) {
+//   e.preventDefault();
+//   console.log('hello');
+//
+//   $(this).siblings($modal).addClass($modalActive);
+//   $modal.attr('aria-hidden', 'false');
+// });
+//
+// $modalClose.on('click', function(e) {
+//   e.preventDefault();
+//   console.log('I am closing');
+//
+//   $(this).parents($modal).removeClass($modalActive);
+// });
 
-$modalTrigger.on('click', function(e) {
-  e.preventDefault();
-  console.log('hello');
+// Get Modal Element
+var modal = document.getElementById('loginModal');
 
-  $(this).siblings($modal).addClass($modalActive);
-  $modal.attr('aria-hidden', 'false');
-});
+// Get open modal button
+var modalBtn = document.getElementById('modalBtn');
 
-$modalClose.on('click', function(e) {
-  e.preventDefault();
-  console.log('I am closing');
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
-  $(this).parents($modal).removeClass($modalActive);
-});
+// Listen for a open click
+modalBtn.addEventListener('click', openModal);
+
+//Listen for close click
+closeBtn.addEventListener('click', closeModal);
+
+// Listen for outside click
+window.addEventListener('click', outsideClick);
+
+// Function to open modal
+function openModal(){
+  modal.style.display = 'block';
+}
+
+// Function to open modal
+function closeModal(){
+  modal.style.display = 'none';
+}
+
+function outsideClick(e){
+if(e.target == modal){
+	modal.style.display ='none';
+	}
+}
