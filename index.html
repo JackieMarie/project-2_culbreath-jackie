@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src = "images/cargo_logo.svg" class="header__logo"/>
+        <img src = "images/cargo_logo.svg" alt="carGO logo" class="header__logo"/>
         <nav class="header__nav">
           <ul class="header__nav__list">
             <li class="header__nav__list__item">
@@ -28,7 +28,7 @@
             </li>
           </ul>
         </nav>
-        <!-- <div> TODO: NEED TO GET THIS TO WORK!!!
+        <div>
           <a href class="modal__trigger-btn">SIGN IN</a>
             <div class="modal" aria-hidden="true">
               <div class="modal__container">
@@ -38,10 +38,10 @@
                   <p>Fill in your username and password.</p>
                 </header>
                 <form>
-                  <label for="email">Username</label>
-                  <input name="name" type="text" placeholder="username or email" class="input modal__input" />
-                  <label for="email">Password</label>
-                  <input name="password" type="text" placeholder="password" class="input modal__input"/>
+                  <label for="name" class="label">Username</label>
+                  <input type="text" id="name" name="name" placeholder="username or email" class="input modal__input" />
+                  <label for="password" class="label">Password</label>
+                  <input type="text" name="password" id="password" placeholder="password" class="input modal__input"/>
                   <ul class="modal__action-list">
                     <li class="modal__action-list__item">
                         <button class="button--primary">Submit</button>
@@ -53,11 +53,11 @@
                 </form>
               </div>
             </div>
-          </div> -->
+          </div>
       </header>
       <section class="landing">
         <h1 class="landing__title text--white">PREVENT BREAKDOWNS AND COSTLY REPAIRS...</h1>
-        <img src="images/logo_white.svg" alt="carGO Logo" class="landing__logo"/ />
+        <img src="images/logo_white.svg" alt="carGO Logo" class="landing__logo" />
       </section>
       <main class="main">
         <article class="main__article">
@@ -68,7 +68,7 @@
           <img src="images/tools_cargo.jpg" alt="Mechanic's Wrenches" class="main__article__image" />
         </article>
         <article class="main__article">
-          <img src="images/car_engine-small.jpg" class="main__article__image" alt="Car Engine" / />
+          <img src="images/car_engine-small.jpg" class="main__article__image" alt="Car Engine" />
           <h3 class="text--green">But what if something could track car maintenance for you?</h3>
           <p>
             Now you can have your car send alerts when it is time for maintenance. Or if there is a mechanical problem! How? With carGO! carGO is a car maintenance application that will read the owner's manual for you. carGO communicates with your car's electonic systems and provides valuable real time and projected owner information. It tracks your maintenance schedules and mechanical issues!
@@ -79,7 +79,7 @@
           <p>
             Deferred maintenance to car systems leads to breakdowns and more costly repairs. With carGO you can see your car system status at a glance! Our caution status lets you know to start saving money and planning a time that works for you to have your car in the shop.
           </p>
-          <img src="images/mobileapp.svg" alt="carGO Mobile Dashboard" class="mobileimg" / />
+          <img src="images/mobileapp.svg" alt="carGO Mobile Dashboard" class="mobileimg"/>
         </article>
         <acticle class="background--yellow main__article--cta">
           <h2>What are you waiting for?!</h2>
@@ -111,17 +111,17 @@
             Sign In
           </div>
         </nav>
-        <img src="images/facebook.svg" alt="Facebook icon" class="footer__icons" / />
-        <img src="images/twitter.svg" alt="Twitter icon" class="footer__icons" / />
-        <img src="images/google-plus.svg" alt="Google icon" class="footer__icons" / />
-        <img src="images/linkedin.svg" alt="Linkedin icon" class="footer__icons" / />
+        <img src="images/facebook.svg" alt="Facebook icon" class="footer__icons" />
+        <img src="images/twitter.svg" alt="Twitter icon" class="footer__icons" />
+        <img src="images/google-plus.svg" alt="Google icon" class="footer__icons" />
+        <img src="images/linkedin.svg" alt="Linkedin icon" class="footer__icons" />
         <div class="footer__disclaimer">
           <h6 class="background--white">
             &copy;JustBelieveDesigns. This site is for educational purposes only.
           </h6>
         </div>
       </footer>
-    <div>
+    </div>
       <script src="js/jquery-3.3.1.min.js"></script>
      <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script> -->
     <script src="js/main.js"></script>
@@ -131,4 +131,3 @@
     </script>
   </body>
 </html>
-=

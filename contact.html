@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src = "images/cargo_logo.svg" class="header__logo"/>
+        <img src = "images/cargo_logo.svg" alt="carGO logo" class="header__logo"/>
         <nav class="header__nav">
           <ul class="header__nav__list">
             <li class="header__nav__list__item">
@@ -37,14 +37,14 @@
           <label for="message" class="label">Message</label>
           <textarea name="message" id="message" placeholder="Tell us your questions...*" class="input" rows="5" required></textarea>
           <label for="name" class="label">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Name*" class="input" required / />
+          <input type="text" id="name" name="name" placeholder="Name*" class="input" required />
           <label for="email" class="label">Email</label>
-          <input type="email" id="email" name="email" placeholder="youremail@address.com*" class="input" required / />
-          <label for="tel" class="label">Telephone Number</label>
-          <input type="tel" id="telephone" name="telephone" placeholder="Telephone Number*" class="input" required / />
-          <label for="method" class="label">Contact Method</label>
-          <select name="contactmethod" id="contactmethod" required />
-            <option selected>Contact Preference?</option>
+          <input type="email" id="email" name="email" placeholder="youremail@address.com*" class="input" required />
+          <label for="telephone" class="label">Telephone Number</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="Telephone Number*" class="input" required />
+          <label for="contactmethod" class="label">Contact Preference</label>
+          <select size="1" name="contactmethod" id="contactmethod" required>
+            <option selected class="italic">Select contact preference:</option>
               <option value="phone">
                 Telephone
               </option>
@@ -78,17 +78,17 @@
             </li>
           </ul>
         </nav>
-        <img src="images/facebook.svg" alt="Facebook icon" class="footer__icons" / />
-        <img src="images/twitter.svg" alt="Twitter icon" class="footer__icons" / />
-        <img src="images/google-plus.svg" alt="Google icon" class="footer__icons" / />
-        <img src="images/linkedin.svg" alt="Linkedin icon" class="footer__icons" / />
+        <img src="images/facebook.svg" alt="Facebook icon" class="footer__icons" />
+        <img src="images/twitter.svg" alt="Twitter icon" class="footer__icons" />
+        <img src="images/google-plus.svg" alt="Google icon" class="footer__icons" />
+        <img src="images/linkedin.svg" alt="Linkedin icon" class="footer__icons" />
         <div class="footer__disclaimer">
           <h6 class="background--white">
             &copy;JustBelieveDesigns. This site is for educational purposes only.
           </h6>
         </div>
       </footer>
-    <div>
+    </div>
     <script src="js/jquery-3.3.1.min.js"></script>
      <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script> -->
     <script src="js/jquery.backstretch.min.js"></script>
