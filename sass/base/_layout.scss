@@ -72,21 +72,20 @@ body {
 }
 
 .main {
-  // display: grid;
-  // margin: $spacer-m $reset-0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  margin: $spacer-m $reset-0;
+  grid-template-columns: 50% 50%;
+  grid-gap: $spacer-m;
   padding: $spacer-s;
 
   &__article {
-    align-items: flex-start;
-    width: 50%;
+      width: 100%;
+      display: inline-grid;
 
     &__article__image {
-      width: 50%;
-      max-width: 600px;
+      display: inline-grid;
+      width: 25%;
+      max-width: 500px;
       margin: auto;
     }
   }
