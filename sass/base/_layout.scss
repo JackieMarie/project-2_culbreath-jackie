@@ -74,7 +74,7 @@ body {
 .main {
   display: grid;
   margin: $spacer-m $reset-0;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-gap: $spacer-m;
   padding: $spacer-s;
 
@@ -89,6 +89,45 @@ body {
       margin: auto;
     }
   }
+}
+
+.cta {
+  display: grid;
+  jusify-content: center;
+  grid-template-rows: [row1] 150px [row2] 50px [row3] 275px [row4] 75px [row5] 50px [row6] 400px;
+
+    &__item--1 {
+      text-align: center;
+      padding: $spacer-lg;
+    }
+
+    &__item--2 {
+      margin-left: $spacer-xxl;
+      margin-right: $spacer-xxl;
+
+    }
+
+    &__item--3 {
+      text-align: center;
+      padding: $spacer-lg;
+    }
+
+    &__item--4 {
+      text-align: center;
+      padding: $spacer-lg;
+    }
+
+    &__item--5 {
+      margin-top: $spacer-s;
+      margin-left: $spacer-xxl;
+      margin-right: $spacer-xxl;
+    }
+
+    &__item--6 {
+      width: 100%;
+      margin: auto;
+      max-width: 350px;
+    }
 }
 
 .contact__main {
@@ -129,15 +168,53 @@ body {
   flex-flow: wrap;
   // padding: $spacer-m;
 
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &__logo {
-    width: 15%;
+    width: 100%;
     max-width: 100px;
-    align-self: center;
+    margin: auto;
+    margin-top: $spacer-m;
   }
 
   &__heading {
     diplay: block;
     align-self: center;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: $spacer-s;
+    text-align: center;
+
+    @include media($large) {
+      flex-direction: row;
+      display: inline-flex;
+      justify-content: center;
+
+    }
+
+    &__list {
+      list-style-type: none;
+
+      &__item {
+        text-decoration: none;
+        padding: $spacer-s;
+
+        @include media($large) {
+          flex-direction: row;
+          display: inline-flex;
+          justify-content: center;
+        }
+      }
+    }
   }
 
   &__icons {
@@ -150,30 +227,5 @@ body {
   &__disclaimer {
     width: 100%;
     text-align: center;
-  }
-
-  &__nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    padding: $spacer-s;
-    text-align: center;
-    // flex-wrap: wrap;
-
-    // @include media($large) {
-    //   flex-direction: row;
-    //   display: inline-flex;
-    // }
-
-    &__list {
-      list-style-type: none;
-
-      &__item {
-        text-decoration: none;
-        // display: inline-flex;
-        padding: $spacer-s;
-      }
-    }
   }
 }
