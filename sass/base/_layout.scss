@@ -94,7 +94,7 @@ body {
 .cta {
   display: grid;
   jusify-content: center;
-  grid-template-rows: [row1] 150px [row2] 50px [row3] 275px [row4] 75px [row5] 50px [row6] 400px;
+  grid-template-columns: 1fr;
 
     &__item--1 {
       text-align: center;
@@ -118,7 +118,6 @@ body {
     }
 
     &__item--5 {
-      margin-top: $spacer-s;
       margin-left: $spacer-xxl;
       margin-right: $spacer-xxl;
     }
@@ -127,6 +126,7 @@ body {
       width: 100%;
       margin: auto;
       max-width: 350px;
+      padding: $spacer-lg 0;
     }
 }
 
@@ -148,12 +148,9 @@ body {
     text-align: center;
   }
 
-  &__form {
-
-    &__button {
-      display: inline;
-      margin-left: $spacer-m;
-    }
+  &__button {
+    display: inline;
+    margin-left: $spacer-m;
   }
 }
 
