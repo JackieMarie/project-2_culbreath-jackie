@@ -2,6 +2,8 @@
 // ========================================
 
 @mixin button($background-value, $color-value, $border-value) {
+
+  @include font-type($primary-font, normal, 700);
   background-color: $background-value;
   color: $color-value;
   border-color: $border-value;

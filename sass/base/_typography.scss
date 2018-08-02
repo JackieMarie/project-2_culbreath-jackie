@@ -41,13 +41,13 @@ h4 {
 h5 {
   @include font-type($primary-font, normal, 700);
   font-size: .85rem;
-  padding: $spacer-s;
+  padding: $spacer-s 0;
 }
 
 h6 {
   @include font-type($primary-font, normal, 400);
   font-size: .7rem;
-  padding: $spacer-s;
+  padding: $spacer-s 0;
 }
 
 p {
