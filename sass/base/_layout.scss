@@ -92,10 +92,10 @@ body {
 
   }
 
-  &--2 img {
-    // width: 100%;
-    // // margin: auto;
-    // max-width: 815px;
+  &--2 {
+    width: 100%;
+    // margin: auto;
+    max-width: 1000px;
   }
 
   &--3 {
@@ -103,8 +103,9 @@ body {
   }
 
   &--4 {
-    // width: 100%;
-    // max-width: 815px;
+    width: 100%;
+    // margin: auto;
+    max-width: 1000px;
   }
 
   &--5 {
@@ -116,17 +117,6 @@ body {
       max-width: 500px;
       align-self: center;
     }
-
-  &--image img {
-    width: 100%;
-    // margin: auto;
-    max-width: 815px;
-  }
-
-  &--image svg {
-    width: 100%;
-    max-width: 600px;
-  }
 }
 
 .cta {
