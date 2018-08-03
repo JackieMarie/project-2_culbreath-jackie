@@ -72,10 +72,19 @@ body {
 }
 
 .index__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: $spacer-s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+.index__grid {
+
+    // &--img img {
+    //   width: 100%;
+    //   max-width: 650px;
+    //   vertical-align: middle;
+    // }
 }
 
 .index__item {
@@ -84,9 +93,9 @@ body {
   }
 
   &--2 img {
-    width: 100%;
-    // margin: auto;
-    max-width: 815px;
+    // width: 100%;
+    // // margin: auto;
+    // max-width: 815px;
   }
 
   &--3 {
@@ -94,8 +103,8 @@ body {
   }
 
   &--4 {
-    width: 100%;
-    max-width: 815px;
+    // width: 100%;
+    // max-width: 815px;
   }
 
   &--5 {
@@ -103,15 +112,20 @@ body {
   }
 
   &--6 {
-    width: 100%;
-    // margin: auto;
-    max-width: 650px;
-  }
+      width: 80%;
+      max-width: 500px;
+      align-self: center;
+    }
 
   &--image img {
     width: 100%;
     // margin: auto;
-    max-width: 650px;
+    max-width: 815px;
+  }
+
+  &--image svg {
+    width: 100%;
+    max-width: 600px;
   }
 }
 
