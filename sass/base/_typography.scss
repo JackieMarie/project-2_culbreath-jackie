@@ -53,6 +53,8 @@ h6 {
 p {
   @include font-type($primary-font, normal, 500);
   font-size: 1.25rem;
+  padding: $spacer-s;
+  line-height: 1.5;
 }
 
 a {
