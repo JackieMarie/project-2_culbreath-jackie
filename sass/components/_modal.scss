@@ -10,7 +10,7 @@
 
   &__container {
     background-color: $white;
-    border: 5px solid $yellow;
+    border: $spacer-s solid $yellow;
     display: flex;
     flex-direction: column;
     visibility: hidden;
@@ -24,6 +24,20 @@
 
   &__header {
     margin-bottom: $spacer-m;
+
+    &--img {
+      margin: auto;
+      text-align: center;
+      align-self: center;
+    }
+
+    &--h3 {
+      text-align: center;
+    }
+
+    &--p {
+      text-align: center;
+    }
   }
 
   &__action-list {
@@ -41,7 +55,6 @@
   }
 
   &--active {
-
       opacity: 1;
       visibility: visible;
   }
