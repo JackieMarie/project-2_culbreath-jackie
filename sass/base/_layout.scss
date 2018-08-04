@@ -114,6 +114,60 @@ body {
     }
 }
 
+.about__grid {
+
+  svg {
+    width: 15%;
+  }
+
+}
+
+.contact__main {
+  width: 95%;
+  min-width: 320px;
+  max-width: 890px;
+  margin: auto;
+  margin-top: $spacer-m;
+  margin-bottom: $spacer-m;
+  padding: $spacer-lg 0 $spacer-lg 0;
+  opacity: .95;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__intro {
+    text-align: center;
+  }
+
+  &__button {
+    display: inline;
+    margin-left: $spacer-m;
+  }
+}
+
+.testimonials {
+  width: 100%;
+
+  &__title {
+  text-align: center;
+  padding-top: $spacer-lg;
+  }
+}
+
+.item-container {
+  margin: $spacer-m;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: $spacer-s;
+
+  &--testimonial {
+    margin: $spacer-m 0;
+  }
+}
+
 .cta {
   display: grid;
   jusify-content: center;
@@ -153,51 +207,6 @@ body {
     margin: auto;
     max-width: 350px;
     padding: $spacer-lg 0;
-  }
-}
-
-.contact__main {
-  width: 95%;
-  min-width: 320px;
-  max-width: 890px;
-  margin: auto;
-  margin-top: $spacer-m;
-  margin-bottom: $spacer-m;
-  padding: $spacer-lg 0 $spacer-lg 0;
-  opacity: .95;
-
-  &__title {
-    text-align: center;
-  }
-
-  &__intro {
-    text-align: center;
-  }
-
-  &__button {
-    display: inline;
-    margin-left: $spacer-m;
-  }
-}
-
-.testimonials {
-
-  &__h3 {
-    test-align: center;
-  }
-}
-
-.item-container {
-  margin: $spacer-m $reset-0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: $spacer-s;
-
-  &__title {
-    align-self: center;
-
   }
 }
 
