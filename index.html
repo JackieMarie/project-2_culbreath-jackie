@@ -32,31 +32,30 @@
           </ul>
         </nav>
         <div>
-          <!-- <a href class="modal__trigger-btn">SIGN IN</a> -->
-            <div class="modal" aria-hidden="true">
-              <div class="modal__container">
-                <img src="images/icon_close.svg" alt="Modal Close Icon" class="modal__close"/>
-                <header class="modal__header">
-                  <h3>Login</h3>
-                  <p>Fill in your username and password.</p>
-                </header>
-                <form>
-                  <label for="email">Username</label>
-                  <input name="name" type="text" placeholder="username or email" class="input modal__input" />
-                  <label for="email">Password</label>
-                  <input name="password" type="text" placeholder="password" class="input modal__input"/>
-                  <ul class="modal__action-list">
-                    <li class="modal__action-list__item">
-                        <button class="button--primary">Submit</button>
-                    </li>
-                    <li class="modal__action-list__item">
-                        <button class="button--secondary modal__close">Cancel</button>
-                    </li>
-                  </ul>
-                </form>
-              </div>
+          <div class="modal" aria-hidden="true">
+            <div class="modal__container">
+              <img src="images/icon_close.svg" alt="Modal Close Icon" class="modal__close"/>
+              <header class="modal__header">
+                <h3>Login</h3>
+                <p>Fill in your username and password.</p>
+              </header>
+              <form>
+                <label for="email">Username</label>
+                <input name="name" type="text" placeholder="username or email" class="input modal__input" />
+                <label for="email">Password</label>
+                <input name="password" type="text" placeholder="password" class="input modal__input"/>
+                <ul class="modal__action-list">
+                  <li class="modal__action-list__item">
+                      <button class="button--primary">Submit</button>
+                  </li>
+                  <li class="modal__action-list__item">
+                      <button class="button--secondary modal__close">Cancel</button>
+                  </li>
+                </ul>
+              </form>
             </div>
           </div>
+        </div>
       </header>
       <section class="landing">
         <h1 class="landing__title text--white">PREVENT BREAKDOWNS AND COSTLY REPAIRS...</h1>
@@ -73,7 +72,7 @@
           <img src="images/tools_cargo.jpg" alt="Mechanic's Wrenches" />
         </div>
         <div class="index__item index__item--3">
-          <h3 class="text--green">But what if something could track car maintenance for you?</h3>
+          <h3 class="text--green">But what if something could your track car maintenance for you?</h3>
           <p>
             Now you can have your car send alerts when it is time for maintenance. Or if there is a mechanical problem! How? With carGO! carGO is a car maintenance application that will read the owner's manual for you. carGO communicates with your car's electonic systems and provides valuable real time and projected owner information. It tracks your maintenance schedules and mechanical issues!
           </p>
@@ -81,25 +80,25 @@
         <div class="index__item index__item--4">
           <img src="images/car_engine-small.jpg" alt="Car Engine" />
         </div>
-          <div class="index__item index__item--5">
+          <div class="index__item index__item--5 background--grey">
           <h3 class="text--green">Track your maintenance visually on your mobile device!</h3>
           <p>
             Deferred maintenance to car systems leads to breakdowns and more costly repairs. With carGO you can see your car system status at a glance! Our caution status lets you know to start saving money and planning a time that works for you to have your car in the shop.
           </p>
         </div>
-        <div class="index__item index__item--6 index__item--svg">
-          <img src="images/mobileapp.svg" alt="carGO Mobile Dashboard" />
+        <div class="index__item background--grey">
+          <img src="images/mobileapp.svg" alt="carGO Mobile Dashboard" class="index__item index__item--6" />
         </div>
       </main>
       <section class="cta background--yellow">
-        <h2 class="cta__item cta__item--1">What are you waiting for?!</h2>
-        <button class="cta__item cta__item--2 button--primary">DOWNLOAD APP</button>
-        <p class="cta__item cta__item--3">
+        <h2 class="cta__title">What are you waiting for?!</h2>
+        <button class="button--primary">DOWNLOAD APP</button>
+        <p class="cta__direction">
           Download the app today and let carGO watch your systems and take the worry from you! carGO can even interface with your search engine to locate qualified mechanics in your area. carGO saves you time and money!
         </p>
-        <h4 class="cta__item cta__item--4">Need more information?</h4>
-        <button class="button--primary cta__item cta__item--5">Contact Us</button>
-        <img src="images/gears.svg" alt="Gears" class="cta__item cta__item--6 cta__image" />
+        <h4 class="cta__title">Need more information?</h4>
+        <button class="button--primary">Contact Us</button>
+        <img src="images/gears.svg" alt="Gears" class="cta__image" />
       </section>
       <footer class="footer">
         <div class="footer__column">
@@ -119,9 +118,6 @@
               <a href="contact.html" class="text--white">Contact</a>
             </li>
           </ul>
-          <!-- <div> TODO: MAKE THIS LINK TO MODAL
-            Sign In
-          </div> -->
         </nav>
         <img src="images/facebook.png" alt="Facebook icon" class="footer__icons" />
         <img src="images/twitter.png" alt="Twitter icon" class="footer__icons" />

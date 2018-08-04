@@ -26,34 +26,36 @@
             <li class="header__nav__list__item">
               <a href="contact.html">CONTACT</a>
             </li>
+            <li class="header__nav__list__item modal__trigger-btn">
+              <a href="#">SIGN IN</a>
+            </li>
           </ul>
         </nav>
         <div>
-          <a href class="modal__trigger-btn">SIGN IN</a>
-            <div class="modal" aria-hidden="true">
-              <div class="modal__container">
-                <img src="images/icon_close.svg" alt="Modal Close Icon" class="modal__close"/>
-                <header class="modal__header">
-                  <h3>Login</h3>
-                  <p>Fill in your username and password.</p>
-                </header>
-                <form>
-                  <label for="email">Username</label>
-                  <input name="name" type="text" placeholder="username or email" class="input modal__input" />
-                  <label for="email">Password</label>
-                  <input name="password" type="text" placeholder="password" class="input modal__input"/>
-                  <ul class="modal__action-list">
-                    <li class="modal__action-list__item">
-                        <button class="button--primary">Submit</button>
-                    </li>
-                    <li class="modal__action-list__item">
-                        <button class="button--secondary modal__close">Cancel</button>
-                    </li>
-                  </ul>
-                </form>
-              </div>
+          <div class="modal" aria-hidden="true">
+            <div class="modal__container">
+              <img src="images/icon_close.svg" alt="Modal Close Icon" class="modal__close"/>
+              <header class="modal__header">
+                <h3>Login</h3>
+                <p>Fill in your username and password.</p>
+              </header>
+              <form>
+                <label for="email">Username</label>
+                <input name="name" type="text" placeholder="username or email" class="input modal__input" />
+                <label for="email">Password</label>
+                <input name="password" type="text" placeholder="password" class="input modal__input"/>
+                <ul class="modal__action-list">
+                  <li class="modal__action-list__item">
+                      <button class="button--primary">Submit</button>
+                  </li>
+                  <li class="modal__action-list__item">
+                      <button class="button--secondary modal__close">Cancel</button>
+                  </li>
+                </ul>
+              </form>
             </div>
           </div>
+        </div>
       </header>
       <section class="landing">
         <h1 class="landing__title text--white">SAVE TIME AND MONEY ON CAR MAINTENANCE WITH...</h1>
@@ -147,14 +149,14 @@
         </div>
       </section>
       <section class="cta background--yellow">
-        <h2 class="cta__item cta__item--1">What are you waiting for?!</h2>
-        <button class="cta__item cta__item--2 button--primary">DOWNLOAD APP</button>
-        <p class="cta__item cta__item--3">
+        <h2 class="cta__title">What are you waiting for?!</h2>
+        <button class="button--primary">DOWNLOAD APP</button>
+        <p class="cta__direction">
           Download the app today and let carGO watch your systems and take the worry from you! carGO can even interface with your search engine to locate qualified mechanics in your area. carGO saves you time and money!
         </p>
-        <h4 class="cta__item cta__item--4">Need more information?</h4>
-        <button class="button--primary cta__item cta__item--5">Contact Us</button>
-        <img src="images/gears.svg" alt="Gears" class="cta__item cta__item--6" />
+        <h4 class="cta__title">Need more information?</h4>
+        <button class="button--primary">Contact Us</button>
+        <img src="images/gears.svg" alt="Gears" class="cta__image" />
       </section>
       <footer class="footer">
         <div class="footer__column">
@@ -174,9 +176,6 @@
               <a href="contact.html" class="text--white">Contact</a>
             </li>
           </ul>
-          <!-- <div> TODO: MAKE THIS LINK TO MODAL
-            Sign In
-          </div> -->
         </nav>
         <img src="images/facebook.png" alt="Facebook icon" class="footer__icons" />
         <img src="images/twitter.png" alt="Twitter icon" class="footer__icons" />
@@ -194,7 +193,7 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script>
-    $('.landing').backstretch("images/mechanic_cargo.jpg");
+    $('.landing').backstretch("images/mechanic_cargo_2.jpg");
     </script>
   </body>
 </html>

@@ -26,10 +26,37 @@
             <li class="header__nav__list__item">
               <a href="contact.html">CONTACT</a>
             </li>
+            <li class="header__nav__list__item modal__trigger-btn">
+              <a href="#">SIGN IN</a>
+            </li>
           </ul>
         </nav>
+        <div>
+          <div class="modal" aria-hidden="true">
+            <div class="modal__container">
+              <img src="images/icon_close.svg" alt="Modal Close Icon" class="modal__close"/>
+              <header class="modal__header">
+                <h3>Login</h3>
+                <p>Fill in your username and password.</p>
+              </header>
+              <form>
+                <label for="email">Username</label>
+                <input name="name" type="text" placeholder="username or email" class="input modal__input" />
+                <label for="email">Password</label>
+                <input name="password" type="text" placeholder="password" class="input modal__input"/>
+                <ul class="modal__action-list">
+                  <li class="modal__action-list__item">
+                      <button class="button--primary">Submit</button>
+                  </li>
+                  <li class="modal__action-list__item">
+                      <button class="button--secondary modal__close">Cancel</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
       </header>
-
       <main class="contact__main background--grey">
         <h1 class="contact__main__title">Contact <span class="cargo">carGO</span></h1>
         <h4 class="contact__main__intro">How can we help? What questions do you have for us?</h4>
