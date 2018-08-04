@@ -48,6 +48,15 @@ body {
       }
     }
   }
+
+  &__signin {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.modal__trigger-btn {
 }
 
 .landing {
