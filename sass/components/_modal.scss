@@ -1,12 +1,12 @@
 .modal {
   position: absolute;
-    /* width: 100%; */
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  /* width: 100%; */
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 
   &__container {
     background-color: $white;
@@ -19,20 +19,20 @@
 
   &__close {
     align-self: flex-end;
-
+    margin: $spacer-s;
   }
+
+  &__image {
+    align-self: center;
+    padding-top: $spacer-s;
+  }
+
 
   &__header {
     margin-bottom: $spacer-m;
 
-    &--img {
-      margin: auto;
-      text-align: center;
-      align-self: center;
-    }
-
     &--h3 {
-      text-align: center;
+    text-align: center;
     }
 
     &--p {
@@ -47,6 +47,10 @@
     &__item {
       display: inline-block;
     }
+  }
+
+  &__label {
+    margin-left: $spacer-m;
   }
 
   &__input {
