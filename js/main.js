@@ -18,25 +18,6 @@ $(function(){
   });
 })
 
-// // Valid email address - rules on Contact Page
-//
-// $(function() {
-//   $('#form').validate({
-//     rules: {
-//       email: {
-//         required: true,
-//         email: true
-//       },
-//     },
-//     messages: {
-//       email: 'Please enter a valid email'
-//     },
-//     submitHandler: function(form) {
-//       form.submit();
-//     }
-//   });
-// });
-
 // Modal
 
 var $modalTrigger = $('.modal__trigger-btn'),
