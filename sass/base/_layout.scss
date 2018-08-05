@@ -181,7 +181,7 @@ body {
 }
 
 .testimonials {
-  width: 100%;
+  padding: $spacer-xlg 0;
 
   &__title {
   text-align: center;
@@ -190,15 +190,19 @@ body {
 }
 
 .item-container {
-  margin: $spacer-m;
+  // margin: $spacer-m;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: $spacer-s;
+  padding: $spacer-s 0;
+
+  @include media($medium) {
+    padding: $spacer-s;
+  }
 
   &--testimonial {
-    margin: $spacer-m 0;
+    margin: $spacer-s 0;
   }
 }
 
@@ -253,7 +257,6 @@ body {
   &__heading {
     diplay: block;
     align-self: center;
-
   }
 
   &__nav {
