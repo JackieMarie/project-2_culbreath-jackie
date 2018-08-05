@@ -73,26 +73,27 @@
           </h3>
         </div>
         <div class="about__item">
-          <img src="images/gear2.png" alt="Green carGO gear" />
+          <!-- <img src="images/gear2.png" alt="Green carGO gear" /> -->
         </div>
-        <div class="about__item">
-          <p>
+        <div class="about__item" class="background--blue">
+          <img src="images/gear2.png" alt="Green carGO gear" class="about__item__image"/>
+          <p class="about__item--desc background--blue text--white">
             <span class="bold">car</span><span class="cargo">GO</span> tracks maintenance. It shows you a dashboard with the current status of your car's functions.
           </p>
         </div>
         <div class="about__item">
-          <img src="images/gear2.png" alt="Green carGO gear" />
+          <img src="images/gear2.png" alt="Green carGO gear" class="about__item__image" />
         </div>
         <div class="about__item">
-          <p>
+          <p class="about__item--desc">
             <span class="bold">car</span><span class="cargo">GO</span> sends you alerts when it is time for maintenance or there is a mechnanical issue.
           </p>
         </div>
         <div class="about__item">
-          <img src="images/gear2.png" alt="Green carGO gear" />
+          <img src="images/gear2.png" alt="Green carGO gear" class="about__item__image" />
         </div>
         <div class="about__item">
-          <p>
+          <p class="about__item--desc">
             <span class="bold">car</span><span class="cargo">GO</span> can help you locate a qualified mechanic. After the car repair, <span class="bold">car</span><span class="cargo">GO</span> starts tracking again.
           </p>
         </div>
@@ -206,6 +207,11 @@
       <script src="js/jquery-3.3.1.min.js"></script>
      <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script> -->
     <script src="js/main.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script>
+      $(function () {
+        $.scrollUp();
+    });</script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script>
     $('.landing').backstretch("images/mechanic_cargo_blur1.jpg");

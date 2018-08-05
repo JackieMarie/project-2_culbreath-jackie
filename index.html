@@ -67,7 +67,7 @@
         <div class="index__item index__item--1">
           <h2>PREVENTION IS KEY!</h2>
           <p>
-            Owner's manuals? Car maintenance schedules? Who reads them?! But breaking down by the side of the road is never fun. Plus, ignoring maintenance can cause extensive, costly damage to your car.
+            Owner's manuals? Car maintenance schedules? Who reads them?! But breaking down by the side of the road is never fun. Plus, ignoring maintenance can cause extensive, costly damage to your car. Learn more or<a onclick="$('#download').animatescroll({scrollSpeed:3000,easing:'easeOutElastic'});"><span class="link">Download Now!</span></a>
           </p>
         </div>
         <div class="index__item index__item--2">
@@ -92,7 +92,7 @@
           <img src="images/mobileapp.svg" alt="carGO Mobile Dashboard" class="index__item index__item--6" />
         </div>
       </main>
-      <section class="cta background--yellow">
+      <section class="cta background--yellow" id="download">
         <h2 class="cta__title">What are you waiting for?!</h2>
         <button class="button--primary">DOWNLOAD APP</button>
         <p class="cta__direction">
@@ -135,9 +135,16 @@
       <script src="js/jquery-3.3.1.min.js"></script>
      <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script> -->
     <script src="js/main.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script>
+      $(function () {
+        $.scrollUp();
+    });</script>
     <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/animatescroll.js"></script>
     <script>
     $('.landing').backstretch("images/preventbreakdowns_cargo.jpg");
     </script>
+
   </body>
 </html>

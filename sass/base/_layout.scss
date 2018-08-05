@@ -147,8 +147,22 @@ body {
 
 .about__grid {
 
+
+
   svg {
     width: 15%;
+  }
+
+}
+
+.about__item {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+
+  &__image {
+    width: 25%;
+    max-width: 100px;
   }
 
 }
@@ -298,4 +312,12 @@ body {
     width: 100%;
     text-align: center;
   }
+}
+
+#scrollUp {
+  bottom: $spacer-m;
+  right: $spacer-m;
+  padding: $spacer-s $spacer-m;
+  background: rgba(0,31,96,.7);
+  color: $white;
 }
