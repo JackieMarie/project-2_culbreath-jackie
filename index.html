@@ -15,23 +15,20 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src = "images/cargo_logo.svg" alt="carGO logo" class="header__logo"/>
-        <nav class="header__nav">
-          <ul class="header__nav__list">
-            <li class="header__nav__list__item">
-              <a href="index.html"><i class="fa fa-fw fa-home"></i>HOME</a>
-            </li>
-            <li class="header__nav__list__item">
-              <a href="about.html"><i class="fas fa-info-circle"></i>ABOUT</a>
-            </li>
-            <li class="header__nav__list__item">
-              <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>CONTACT</a>
-            </li>
-            <li class="header__nav__list__item modal__trigger-btn">
-              <a href="#"><i class="fa fa-fw fa-user"></i>SIGN IN</a>
-            </li>
-          </ul>
-        </nav>
+        <nav class="nav">
+          <div class="nav-container">
+            <img src = "images/cargo_logo.svg" alt="carGO logo" class="header__logo" />
+            <div class="menu--toggle">
+              	<i class="fas fa-bars"></i>
+            </div>
+          </div>
+            <ul class="menu">
+              <li class="menu--item"><a href="home.html"><i class="fa fa-fw fa-home"></i>HOME</a></li>
+              <li class="menu--item"><a href="about.html"><i class="fas fa-info-circle"></i>ABOUT</a></li>
+              <li class="menu--item"><a href="contact.html"><i class="fa fa-fw fa-envelope"></i>CONTACT</a></li>
+              <li class="menu--item modal__trigger-btn"><a href="#"><i class="fa fa-fw fa-user"></i>SIGN IN</a></li>
+            </ul>
+          </nav>
         <div>
           <div class="modal" aria-hidden="true">
             <div class="modal__container">

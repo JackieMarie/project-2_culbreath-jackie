@@ -39,3 +39,28 @@ $modalClose.on('click', function(e) {
 
   $($modalContainer).removeClass($modalActive);
 });
+
+// Hamburger Navigation
+//
+// document.addEventListener("DOMContentLoaded", () => {
+// 	let navbar_list = document.getElementById('navbar--list');
+// 	let navbar_toggle = document.getElementById('navbar--toggle');
+// 	navbar_toggle.addEventListener('click', function () {
+// 		if (this.classList.contains('active')) {
+// 			navbar_list.style.display = "none";
+// 			this.classList.remove('active');
+// 		} else {
+// 			navbar_list.style.display = "flex";
+// 			this.classList.add('active');
+// 		}
+// 	})
+// })
+
+// jQuery and CSS animation Hamburger Nav
+$(function() {
+
+  $('.menu--toggle').on('click', function(e) {
+    $('.menu').toggleClass('menu--active');
+  });
+
+});

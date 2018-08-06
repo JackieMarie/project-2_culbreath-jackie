@@ -11,52 +11,120 @@ body {
   min-height: 100vh;
   min-width: 320px;
 }
+// TODO: Delete once hamburger menu is working
+// .header {
+//   display: flex;
+//   flex-direction: column;
+//   // width: 100%;
+//   flex-flow: wrap;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+//   background-color: $yellow;
+//
+//   &__logo {
+//     width: 25%;
+//     max-width: 175px;
+//     padding: $spacer-s;
+//     align-items: flex-start;
+//     position: absolute;
+//   }
+//
+//   &__nav {
+//     display: inline-flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     width: 100%;
+//     padding: $spacer-m;
+//     background-color: $white;
+//
+//     &__list {
+//       list-style-type: none;
+//
+//       &__item {
+//         text-decoration: none;
+//         display: inline-flex;
+//         padding: $spacer-s;
+//         align-items: flex-end;
+//       }
+//     }
+//   }
+// }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  // width: 100%;
-  flex-flow: wrap;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  background-color: $yellow;
+  padding: $spacer-m;
+  background-color: $white;
 
   &__logo {
     width: 25%;
-    max-width: 175px;
-    padding: $spacer-s;
-    align-items: flex-start;
-    position: absolute;
-  }
 
-  &__nav {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-    padding: $spacer-m;
-    background-color: $white;
-
-    &__list {
-      list-style-type: none;
-
-      &__item {
-        text-decoration: none;
-        display: inline-flex;
-        padding: $spacer-s;
-        align-items: flex-end;
-      }
+    @include media($large) {
+      width: 100%;
+      max-width: 175px;
     }
-  }
-
-  &__signin {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
   }
 }
 
-.modal__trigger-btn {
+.nav {
+
+    @include media($large) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // width: 100%;
+
+  @include media($large) {
+    width: auto;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: none;
+  background-color: $white;
+  transition: 2s display ease-in-out;
+  text-align: center;
+  // z-index: 1000;
+
+  @include media($large) {
+    display: flex;
+    align-items: center;
+  }
+
+  &--active {
+    background-color: $white;
+    display: block;
+    transition: 2s display ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  &--item {
+    padding: 0 0 $spacer-m 0;
+
+    @include media($large) {
+      display: inline-block;
+      padding: 0 $spacer-lg 0 0;
+    }
+  }
+
+  &--toggle {
+    cursor: pointer;
+
+      @include media($large) {
+      display: none;
+    }
+
+    &:hover {
+      color: $green;
+    }
+  }
 }
 
 .landing {
@@ -146,8 +214,6 @@ body {
 }
 
 .about__grid {
-
-
 
   svg {
     width: 15%;
