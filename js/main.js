@@ -64,3 +64,16 @@ $(function() {
   });
 
 });
+
+$(function() {
+  $('.download').on('click','mouseover', function() {
+    $(this).stop().animate({
+      width: '+=100'
+    }, 3000);
+  });
+
+  $('.download').on('click','mouseout', function() {
+    $(this).stop().animate(
+      {width: '-=100'}, 3000);
+  });
+});
