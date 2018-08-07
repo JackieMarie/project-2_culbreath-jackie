@@ -1,14 +1,3 @@
-// LOAD BACKSTRETCH images
-
-// Home Page Landing Image
-$('.landing-home').backstretch("images/preventbreakdowns_cargo.jpg");
-
-// About Page Landing Image
-$('.landing-about').backstretch("images/mechanic_cargo.jpg");
-
-// Contact Page Background image
-$('.contactpage').backstretch("images/car_engine-large.jpg");
-
 
 // JQuery and CSS animation Hamburger Nav
 
