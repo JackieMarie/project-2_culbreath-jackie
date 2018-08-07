@@ -130,8 +130,6 @@ body {
 
 .landing {
   height: 75vh;
-  background-color: $white;
-  background-blend-mode: screen;
   display: flex;
   flex-direction: column;
 
@@ -195,7 +193,6 @@ body {
 
     @include media($medium) {
       padding-top: 100px;
-      // padding-left: $spacer-xxl;
     }
 
     @include media($large) {
@@ -216,6 +213,8 @@ body {
       }
     }
 }
+
+// ABOUT PAGE
 
 .about__grid {
   display: grid;
@@ -247,7 +246,7 @@ body {
   }
 
   &--3 {
-    text-align: center;
+    justify-self: center;
 
     @include media($large) {
       grid-column: 1/2;
@@ -259,8 +258,8 @@ body {
   &--4 {
     background-color: $blue;
     color: $white;
+    padding: $spacer-m;
     border-radius: $spacer-s;
-    max-width: 900px;
     width: 90%;
     justify-self: center;
 
@@ -269,11 +268,12 @@ body {
       width: 100%;
       justify-self: start;
       align-self: center;
+      max-width: 900px;
     }
   }
 
   &--5 {
-    width: 45%;
+    width: 60%;
     justify-self: center;
     padding-top: $spacer-m;
     max-width: 400px;
@@ -284,6 +284,7 @@ body {
       width: 75%;
       max-width: 500px;
       justify-self: start;
+      align-self: center;
     }
   }
 
@@ -291,18 +292,51 @@ body {
     width: 100%;
     max-width: 100px;
   }
+}
 
-  &__svg {
-    width: 100%;
+.notify {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $spacer-lg;
+  margin-top: $spacer-xlg;
+  padding: $spacer-xxl 0;
+
+  @include media($large) {
+    grid-template-columns: 40% 50%;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: $spacer-s;
+  }
+}
+
+.notify__item {
+
+  &--1 {
+    width: 60%;
+    justify-self: center;
+    padding-top: $spacer-m;
+    max-width: 400px;
+    padding-top: $spacer-lg;
+
+    @include media($large) {
+      grid-column: 1/2;
+      width: 75%;
+      max-width: 500px;
+      justify-self: center;
+      align-self: center;
+    }
   }
 
-  // &--desc {
-  //   background-color: $blue;
-  //   color: $white;
-  //   border-radius: $spacer-s;
-  // }
+  &--2 {
 
+      @include media($large) {
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: start;
+    }
+  }
 }
+
+// CONTACT PAGE
 
 .contact__main {
   width: 95%;
@@ -341,7 +375,6 @@ body {
 }
 
 .item-container {
-  // margin: $spacer-m;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
