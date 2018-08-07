@@ -366,10 +366,9 @@ body {
   }
 
   &--4 {
-    background-color: $blue;
-    color: $white;
+    border: $spacer-xs solid $blue;
     padding: $spacer-m;
-    border-radius: $spacer-s;
+    border-radius: $spacer-lg;
     width: 90%;
     justify-self: center;
 
@@ -391,7 +390,7 @@ body {
     @include media($large) {
       grid-column: 4/5;
       grid-row: 3/6;
-      width: 75%;
+      width: 65%;
       max-width: 500px;
       justify-self: start;
       align-self: center;
