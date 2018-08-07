@@ -12,30 +12,33 @@
 
 ---
 
-# Project 2 - Part 3
+# Project 2 - Part 5
 
 ### Resources
-I did not use any resources outside of the lectures and my notes on this assignment.
 
-### Deductions
-I have reviewed the list of deductions for this project and in the syllabus.
-
-### Comments
-For Part 3, I added my html files, started the navigation, added images, and added navigation to the footer. I am behind due to a work situation where I had to cover for someone unexpectedly and work a lot of extra hours the last week. Hope to catch up by this coming weekend.
-
-# Project 2 - Part 4
-
-### Resources
-References used for flexbox and CSS grid:
 - [Flexbox in CSS](https://cssreference.io/flexbox/)
+
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+- [CSS Grid Layout Crash Course](https://www.youtube.com/watch?v=jV8B24rSN5o&t=1330s): This really helped with positioning my about page grid. Need to go back and tweak the grid on my index page.
+
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-General Reference:
-- [W3C Schools](https://www.w3schools.com/)
+- [Hamburger Menu](https://codepen.io/createlyn/pen/xJYmZx): Used this for my hamburger menu, but my links do not work on mobile. I think maybe the Backstretch plugin I am using for section beneath the header is causing this but am not sure.
+
+- Ducket, J. (2014). *Javascript & JQuery: interactive front-end web development.* Indianapolis, IN: John Wiley & Sons, Inc.: Used the book as reference to code JQuery event.
+
+- [W3C Schools](https://www.w3schools.com/): Used this site to help me with my JQuery code.
+
+##### Plugins
+- [Backstretch](http://www.jquery-backstretch.com/): Used this plugin for the background image of my entire Contact page. I also used it on images in a `.landing` section of both my Home and About pages.
+
+- [ScrollUp](https://markgoodyear.com/2013/01/scrollup-jquery-plugin/): This plugin was applied to all of my pages. As soon as a user starts to scroll down, this appears in the lower, left corner.
+
+- I also used loaded in a smoothscroll.js file that I used on a past project. There is a link in the opening paragraph on my Home page that users can click and it will scroll down to the Call-To-Action section at the bottom to download the app.
 
 ### Deductions
-I have reviewed the list of deductions for this project and in the syllabus.
+I reviewed the list of deductions for this project and in the syllabus.
 
 ### Comments
-For Part 4, I finished formatting my Contact page, except the buttons. Having some problems with placement. Also, added content to the Home page. Still trying to get the modal to work and place it in the nav bar.
+I am about finished with my site. I need to tweak the Home page grid, review my code, and also try to get the links in the hamburger menu to work!
