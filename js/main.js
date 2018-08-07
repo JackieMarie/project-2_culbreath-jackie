@@ -48,21 +48,23 @@ $(function() {
 
 });
 
-// JQUERY Mouseover, Mouseout, and Click events
+// JQUERY Mouseover, Mouseout, and Click events:
+
+// $(function() {
+//
+//   $('.gearimg').on('click mouseover', function() {
+//     $(this).attr('src','images/gear.png');
+//   });
+//
+//   $('.gearimg').on('click mouseout', function() {
+//     $(this).attr('src', 'images/gear2.png');
+//   });
+// });
+
+// JQUERY Mouseover, Mouseout, and Click event used on Home and About pages in Call-to-Action section:
 
 $(function() {
 
-  $('.gearimg').on('click mouseover', function() {
-    $(this).attr('src','images/gear.png');
-  });
-
-  $('.gearimg').on('click mouseout', function() {
-    $(this).attr('src', 'images/gear2.png');
-  });
-});
-
-
-$(function() {
   $('#download').on('click mouseover', function() {
     $(this).stop().animate({
       'font-size': '30px',
@@ -74,4 +76,15 @@ $(function() {
       'font-size': '17px',
     }, 2000);
   });
+});
+
+//JQuery Scroll Down: Used on Home and About Pages in Main div on Download Now link
+
+$(function() {
+
+  $('.scrolldown').click(function() {
+    $('html, body').animate({
+      scrollTop: $(".cta").offset().top
+    }, 3000)
+  })
 });
