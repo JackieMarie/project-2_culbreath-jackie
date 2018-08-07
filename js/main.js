@@ -1,22 +1,24 @@
-// To disable submit button on Contact Page
+// LOAD BACKSTRETCH images
 
-$(function(){
-  $('.input').keyup(function() {
+// Home Page Landing Image
+$('.landing-home').backstretch("images/preventbreakdowns_cargo.jpg");
 
-    var empty = false;
-    $('.input').each(function(){
-      if ($(this).val() == '') {
-        empty = true;
-      }
-    });
+// About Page Landing Image
+$('.landing-about').backstretch("images/mechanic_cargo.jpg");
 
-    if (empty) {
-      $('#submit').attr('disabled', 'disabled').hasClass('.button--disabled').removeClass('button--primary');
-    } else {
-      $('#submit').removeAttr('disabled').addClass('button--primary').removeClass('button--disabled');
-    }
+// Contact Page Background image
+$('.contactpage').backstretch("images/car_engine-large.jpg");
+
+
+// JQuery and CSS animation Hamburger Nav
+
+$(function() {
+
+  $('.menu--toggle').on('click', function(e) {
+    $('.menu').toggleClass('menu--active');
   });
-})
+
+});
 
 // JS Modal
 
@@ -38,15 +40,25 @@ $modalClose.on('click', function(e) {
   $($modalContainer).removeClass($modalActive);
 });
 
-// JQuery and CSS animation Hamburger Nav
+// To disable submit button on Contact Page
 
-$(function() {
+$(function(){
+  $('.input').keyup(function() {
 
-  $('.menu--toggle').on('click', function(e) {
-    $('.menu').toggleClass('menu--active');
+    var empty = false;
+    $('.input').each(function(){
+      if ($(this).val() == '') {
+        empty = true;
+      }
+    });
+
+    if (empty) {
+      $('#submit').attr('disabled', 'disabled').hasClass('.button--disabled').removeClass('button--primary');
+    } else {
+      $('#submit').removeAttr('disabled').addClass('button--primary').removeClass('button--disabled');
+    }
   });
-
-});
+})
 
 // JQUERY Mouseover, Mouseout, and Click events:
 
