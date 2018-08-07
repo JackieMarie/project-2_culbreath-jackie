@@ -195,42 +195,112 @@ body {
 
     @include media($medium) {
       padding-top: 100px;
+      // padding-left: $spacer-xxl;
+    }
+
+    @include media($large) {
+      padding-top: 250px;
+      padding-left: $spacer-xxl;
     }
   }
 
   &--6 {
-      max-width: 400px;
       width: 80%;
+      padding: $spacer-xlg 0;
       margin: auto;
-      padding: $spacer-xlg $spacer-lg;
+      max-width: 315px;
+      margin: 10%;
 
       @include media($medium) {
-        -moz-transform: rotate(5deg) translateX(10px) translateY(10px);
-        -webkit-transform: rotate(5deg) translateX(10px) translateY(10px);
-        -o-transform: rotate(5deg) translateX(10px) translateY(10px);
-        -ms-transform: rotate(5deg) translateX(10px) translateY(10px);
-        transform: rotate(5deg) translateX(10px) translateY(10px);
+        max-width: 400px;
       }
     }
 }
 
 .about__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $spacer-lg;
 
-  svg {
-    width: 15%;
+  @include media($large) {
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: $spacer-s;
   }
-
 }
 
 .about__item {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
+
+  &--1 {
+
+    @include media($large) {
+      grid-column: 1/5;
+    }
+  }
+
+  &--2 {
+
+    @include media($large) {
+      grid-column: 1/5;
+    }
+  }
+
+  &--3 {
+    text-align: center;
+
+    @include media($large) {
+      grid-column: 1/2;
+      justify-self: end;
+      align-self: center;
+    }
+  }
+
+  &--4 {
+    background-color: $blue;
+    color: $white;
+    border-radius: $spacer-s;
+    max-width: 900px;
+    width: 90%;
+    justify-self: center;
+
+    @include media($large) {
+      grid-column: 2/4;
+      width: 100%;
+      justify-self: start;
+      align-self: center;
+    }
+  }
+
+  &--5 {
+    width: 45%;
+    justify-self: center;
+    padding-top: $spacer-m;
+    max-width: 400px;
+
+    @include media($large) {
+      grid-column: 4/5;
+      grid-row: 3/6;
+      width: 75%;
+      max-width: 500px;
+      justify-self: start;
+    }
+  }
 
   &__image {
-    width: 25%;
+    width: 100%;
     max-width: 100px;
   }
+
+  &__svg {
+    width: 100%;
+  }
+
+  // &--desc {
+  //   background-color: $blue;
+  //   color: $white;
+  //   border-radius: $spacer-s;
+  // }
 
 }
 
@@ -296,6 +366,10 @@ body {
 
   &__direction {
     padding: $spacer-m $spacer-s 0 0;
+
+    @include media($medium) {
+      padding: $spacer-m $spacer-xxl;
+    }
   }
 
   &__image {
