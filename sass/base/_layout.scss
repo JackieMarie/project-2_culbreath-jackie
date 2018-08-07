@@ -115,7 +115,7 @@ body {
 
   &__logo {
     width: 100%;
-    max-width: 100px;
+    max-width: $spacer-xxxl;
     margin: auto;
     margin-top: $spacer-lg;
     padding-bottom: $spacer-s;
@@ -198,6 +198,48 @@ body {
   }
 }
 
+.info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $spacer-lg;
+  margin-top: $spacer-xlg;
+  padding: $spacer-xxl 0;
+
+  @include media($large) {
+    grid-template-columns: 40% 50%;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: $spacer-s;
+  }
+}
+
+.info__item {
+
+  &--1 {
+    width: 60%;
+    justify-self: center;
+    padding-top: $spacer-m;
+    max-width: 400px;
+    padding-top: $spacer-lg;
+
+    @include media($large) {
+      grid-column: 1/2;
+      width: 75%;
+      max-width: 500px;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+
+  &--2 {
+
+      @include media($large) {
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: start;
+    }
+  }
+}
+
 .cta {
   text-align: center;
 
@@ -209,7 +251,7 @@ body {
     padding: $spacer-m $spacer-s 0 0;
 
     @include media($medium) {
-      padding: $spacer-m $spacer-xxl;
+      padding: $spacer-m $spacer-xxxl;
     }
   }
 
@@ -273,7 +315,7 @@ body {
     padding-top: $spacer-m;
 
     @include media($medium) {
-      padding-top: 100px;
+      padding-top: $spacer-xxxl;
     }
 
     @include media($large) {
@@ -373,49 +415,7 @@ body {
 
   &__image {
     width: 100%;
-    max-width: 100px;
-  }
-}
-
-.notify {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: $spacer-lg;
-  margin-top: $spacer-xlg;
-  padding: $spacer-xxl 0;
-
-  @include media($large) {
-    grid-template-columns: 40% 50%;
-    grid-auto-rows: minmax(50px, auto);
-    grid-gap: $spacer-s;
-  }
-}
-
-.notify__item {
-
-  &--1 {
-    width: 60%;
-    justify-self: center;
-    padding-top: $spacer-m;
-    max-width: 400px;
-    padding-top: $spacer-lg;
-
-    @include media($large) {
-      grid-column: 1/2;
-      width: 75%;
-      max-width: 500px;
-      justify-self: center;
-      align-self: center;
-    }
-  }
-
-  &--2 {
-
-      @include media($large) {
-        grid-column: 2/3;
-        align-self: center;
-        justify-self: start;
-    }
+    max-width: $spacer-xxxl;
   }
 }
 
@@ -444,7 +444,7 @@ body {
   }
 }
 
-// CONTACT PAGE STYLES
+// CONTACT PAGE
 
 .contact__main {
   width: 95%;
