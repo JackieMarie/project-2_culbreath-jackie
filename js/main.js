@@ -38,7 +38,7 @@ $modalClose.on('click', function(e) {
   $($modalContainer).removeClass($modalActive);
 });
 
-// jQuery and CSS animation Hamburger Nav
+// JQuery and CSS animation Hamburger Nav
 
 $(function() {
 

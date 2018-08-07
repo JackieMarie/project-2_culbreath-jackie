@@ -10,6 +10,7 @@ body {
 .container {
   min-height: 100vh;
   min-width: 320px;
+  max-width: 2500px;
 }
 // TODO: Delete once hamburger menu is working
 // .header {
@@ -68,15 +69,14 @@ body {
 .nav {
 
     @include media($large) {
-    display: flex;
-    justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
   }
 }
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // width: 100%;
 
   @include media($large) {
     width: auto;
@@ -89,7 +89,6 @@ body {
   background-color: $white;
   transition: 2s display ease-in-out;
   text-align: center;
-  // z-index: 1000;
 
   @include media($large) {
     display: flex;
@@ -103,7 +102,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 10000; // Modal z-index at 9999
   }
 
   &--item {
@@ -111,7 +110,14 @@ body {
 
     @include media($large) {
       display: inline-block;
-      padding: 0 $spacer-lg 0 0;
+
+      &:not(:last-child) {
+        padding: 0 $spacer-lg 0 0;
+      }
+
+      &:last-child {
+        padding: 0 $spacer-xs 0 0;
+      }
     }
   }
 
@@ -233,6 +239,7 @@ body {
 .about__item {
 
   &--1 {
+    padding-left: $spacer-s;
 
     @include media($large) {
       grid-column: 1/5;
@@ -240,6 +247,7 @@ body {
   }
 
   &--2 {
+    padding-left: $spacer-s;
 
     @include media($large) {
       grid-column: 1/5;

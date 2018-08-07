@@ -103,4 +103,11 @@ a {
   padding: $spacer-s;
   line-height: 1.5;
   text-decoration: underline;
+
+  &--h3 {
+    @include font-type($primary-font, normal, 500);
+    padding: $spacer-s;
+    margin-bottom: $spacer-xs;
+    font-size: 1.5rem;
+  }
 }
