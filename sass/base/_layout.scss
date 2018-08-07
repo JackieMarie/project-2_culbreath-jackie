@@ -2,6 +2,8 @@
 // This is where your layout of the project will go
 // ========================================
 
+// STYLES USED ON ALL HTML PAGES:
+
 body {
   background-color: $white;
   font-family: $primary-font;
@@ -10,46 +12,7 @@ body {
 .container {
   min-height: 100vh;
   min-width: 320px;
-  max-width: 2500px;
 }
-// TODO: Delete once hamburger menu is working
-// .header {
-//   display: flex;
-//   flex-direction: column;
-//   // width: 100%;
-//   flex-flow: wrap;
-//   flex-wrap: wrap;
-//   justify-content: flex-start;
-//   background-color: $yellow;
-//
-//   &__logo {
-//     width: 25%;
-//     max-width: 175px;
-//     padding: $spacer-s;
-//     align-items: flex-start;
-//     position: absolute;
-//   }
-//
-//   &__nav {
-//     display: inline-flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     width: 100%;
-//     padding: $spacer-m;
-//     background-color: $white;
-//
-//     &__list {
-//       list-style-type: none;
-//
-//       &__item {
-//         text-decoration: none;
-//         display: inline-flex;
-//         padding: $spacer-s;
-//         align-items: flex-end;
-//       }
-//     }
-//   }
-// }
 
 .header {
   padding: $spacer-m;
@@ -73,6 +36,7 @@ body {
       justify-content: space-between;
   }
 }
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -134,6 +98,85 @@ body {
   }
 }
 
+.footer {
+  width: 100%;
+  background-color: $darkgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-flow: wrap;
+  // padding: $spacer-m;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 100px;
+    margin: auto;
+    margin-top: $spacer-lg;
+    padding-bottom: $spacer-s;
+  }
+
+  &__heading {
+    display: block;
+    align-self: center;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: $spacer-m;
+    text-align: center;
+
+    @include media($large) {
+      flex-direction: row;
+      display: inline-flex;
+      justify-content: center;
+    }
+
+    &__list {
+      list-style-type: none;
+
+      &__item {
+      padding: $spacer-s;
+
+        @include media($large) {
+          display: inline-flex;
+          padding: $spacer-lg;
+        }
+      }
+    }
+  }
+
+  &__icons {
+    width: 100%;
+    max-width: 32px;
+    display: inline-flex;
+    padding: $spacer-lg $spacer-m;
+  }
+
+  &__disclaimer {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#scrollUp {
+  bottom: $spacer-m;
+  right: $spacer-m;
+  padding: $spacer-s $spacer-m;
+  background: rgba(0,31,96,.7);
+  color: $white;
+}
+
+// STYLES USED ON BOTH HOME AND ABOUT PAGES:
+
 .landing {
   height: 75vh;
   display: flex;
@@ -154,6 +197,37 @@ body {
     padding: 0 $spacer-xlg $spacer-xxl 0;
   }
 }
+
+.cta {
+  text-align: center;
+
+  &__title {
+  padding: $spacer-lg 0;
+  }
+
+  &__direction {
+    padding: $spacer-m $spacer-s 0 0;
+
+    @include media($medium) {
+      padding: $spacer-m $spacer-xxl;
+    }
+  }
+
+  &__image {
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    padding: $spacer-lg;
+
+    @include media($medium) {
+      max-width: 350px;
+      padding: $spacer-xlg 0;
+    }
+
+  }
+}
+
+// HOME PAGE STYLES:
 
 .index__grid {
   display: grid;
@@ -221,7 +295,7 @@ body {
     }
 }
 
-// ABOUT PAGE
+// ABOUT PAGE STYLES:
 
 .about__grid {
   display: grid;
@@ -345,7 +419,32 @@ body {
   }
 }
 
-// CONTACT PAGE
+.testimonials {
+  padding: $spacer-xlg 0;
+
+  &__title {
+  text-align: center;
+  padding-top: $spacer-lg;
+  }
+}
+
+.item-container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: $spacer-s 0;
+
+  @include media($medium) {
+    padding: $spacer-s;
+  }
+
+  &--testimonial {
+    margin: $spacer-s 0;
+  }
+}
+
+// CONTACT PAGE STYLES
 
 .contact__main {
   width: 95%;
@@ -372,135 +471,4 @@ body {
       margin-right: $spacer-s;
     }
   }
-}
-
-.testimonials {
-  padding: $spacer-xlg 0;
-
-  &__title {
-  text-align: center;
-  padding-top: $spacer-lg;
-  }
-}
-
-.item-container {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: $spacer-s 0;
-
-  @include media($medium) {
-    padding: $spacer-s;
-  }
-
-  &--testimonial {
-    margin: $spacer-s 0;
-  }
-}
-
-.cta {
-  text-align: center;
-
-  &__title {
-  padding: $spacer-lg 0;
-  }
-
-  &__direction {
-    padding: $spacer-m $spacer-s 0 0;
-
-    @include media($medium) {
-      padding: $spacer-m $spacer-xxl;
-    }
-  }
-
-  &__image {
-    max-width: 250px;
-    display: block;
-    margin: auto;
-    padding: $spacer-lg;
-
-    @include media($medium) {
-      max-width: 350px;
-      padding: $spacer-xlg 0;
-    }
-
-  }
-}
-
-.footer {
-  width: 100%;
-  background-color: $darkgrey;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-flow: wrap;
-  // padding: $spacer-m;
-
-  &__column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  &__logo {
-    width: 100%;
-    max-width: 100px;
-    margin: auto;
-    margin-top: $spacer-lg;
-    padding-bottom: $spacer-s;
-  }
-
-  &__heading {
-    diplay: block;
-    align-self: center;
-  }
-
-  &__nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    padding: $spacer-m;
-    text-align: center;
-
-    @include media($large) {
-      flex-direction: row;
-      display: inline-flex;
-      justify-content: center;
-    }
-
-    &__list {
-      list-style-type: none;
-
-      &__item {
-      padding: $spacer-s;
-
-        @include media($large) {
-          display: inline-flex;
-          padding: $spacer-lg;
-        }
-      }
-    }
-  }
-
-  &__icons {
-    width: 100%;
-    max-width: 32px;
-    display: inline-flex;
-    padding: $spacer-lg $spacer-m;
-  }
-
-  &__disclaimer {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-#scrollUp {
-  bottom: $spacer-m;
-  right: $spacer-m;
-  padding: $spacer-s $spacer-m;
-  background: rgba(0,31,96,.7);
-  color: $white;
 }
