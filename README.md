@@ -57,4 +57,4 @@ I reviewed the list of deductions for this project and in the syllabus.
 #### Comments
 I have learned so much this semester! My site may not be perfect, but I am very happy with it and all that I have accomplished. I hope to continue to improve my design, JavaScript and jQuery skills. This class helped me get much closer to my goals.
 
-- [Commit Link to move images used with Backstretch plugin to my main.js file](https://github.com/JackieMarie/project-2_culbreath-jackie/commit/b6f2b23036282bb2d6962a028f6cd18ac3447754): This did not work and the images would not load at all in the `.landing` sections of my Home and About pages, nor as the background image of my Contact page.
+- [Commit Link to move images used with Backstretch plugin to my main.js file](https://github.com/JackieMarie/project-2_culbreath-jackie/commit/b6f2b23036282bb2d6962a028f6cd18ac3447754): This did not work and the images would not load at all in the `.landing` sections of my Home and About pages, nor as the background image of my Contact page. However, added the script and link to the image of my html page didn't seem to work either. So I left the links in the backstretch.min.js file.
