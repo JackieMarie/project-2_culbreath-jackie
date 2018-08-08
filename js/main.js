@@ -29,39 +29,6 @@ $modalClose.on('click', function(e) {
   $($modalContainer).removeClass($modalActive);
 });
 
-// To disable submit button on Contact Page
-
-$(function(){
-  $('.input').keyup(function() {
-
-    var empty = false;
-    $('.input').each(function(){
-      if ($(this).val() == '') {
-        empty = true;
-      }
-    });
-
-    if (empty) {
-      $('#submit').attr('disabled', 'disabled').hasClass('.button--disabled').removeClass('button--primary');
-    } else {
-      $('#submit').removeAttr('disabled').addClass('button--primary').removeClass('button--disabled');
-    }
-  });
-})
-
-// JQUERY Mouseover, Mouseout, and Click events:
-
-// $(function() {
-//
-//   $('.gearimg').on('click mouseover', function() {
-//     $(this).attr('src','images/gear.png');
-//   });
-//
-//   $('.gearimg').on('click mouseout', function() {
-//     $(this).attr('src', 'images/gear2.png');
-//   });
-// });
-
 // JQUERY Mouseover, Mouseout, and Click event used on Home and About pages in Call-to-Action section:
 
 $(function() {
@@ -79,7 +46,7 @@ $(function() {
   });
 });
 
-//JQuery Scroll Down: Used on Home and About Pages in Main div on Download Now link
+//JQuery scrollTop: Used on Home and About Pages in Main div on Download Now link
 
 $(function() {
 
@@ -89,3 +56,23 @@ $(function() {
     }, 3000)
   })
 });
+
+// JS to Disable Submit button
+
+$(function(){
+  $('.input').keyup(function() {
+
+    var empty = false;
+    $('.input').each(function(){
+      if ($(this).val() == '') {
+        empty = true;
+      }
+    });
+
+    if (empty) {
+      $('#submit').attr('disabled', 'disabled').hasClass('.button--disabled').removeClass('button--primary');
+    } else {
+      $('#submit').removeAttr('disabled').addClass('button--primary').removeClass('button--disabled');
+    }
+  });
+})()

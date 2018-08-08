@@ -319,7 +319,7 @@ body {
 .about__grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: $spacer-lg;
+  // grid-gap: $spacer-lg;
 
   @include media($large) {
     display: grid;
@@ -349,6 +349,8 @@ body {
 
   &--3 {
     justify-self: center;
+    align-self: end;
+    padding-top: $spacer-xxl;
 
     @include media($large) {
       grid-column: 1/2;
@@ -358,11 +360,14 @@ body {
   }
 
   &--4 {
-    border: $spacer-xs solid $blue;
-    padding: $spacer-m;
+    background-color: $blue;
+    color: $white;
+    padding: $spacer-s;
     border-radius: $spacer-lg;
     width: 90%;
     justify-self: center;
+    align-self: start;
+    text-align: center;
 
     @include media($large) {
       grid-column: 2/4;
@@ -370,6 +375,7 @@ body {
       justify-self: start;
       align-self: center;
       max-width: 900px;
+      text-align: left;
     }
   }
 
@@ -378,6 +384,7 @@ body {
     justify-self: center;
     padding-top: $spacer-m;
     max-width: 400px;
+    padding-top: $spacer-xxl;
 
     @include media($large) {
       grid-column: 4/5;

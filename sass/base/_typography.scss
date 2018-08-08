@@ -1,7 +1,7 @@
 // Base Typography Stylesheet
 // ========================================
 html {
-  font-size: 1rem;
+  font-size: .9rem;
 
   @include media($medium) {
     font-size: 1.15rem
