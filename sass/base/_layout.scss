@@ -2,8 +2,6 @@
 // This is where your layout of the project will go
 // ========================================
 
-// STYLES USED ON ALL HTML PAGES:
-
 body {
   background-color: $white;
   font-family: $primary-font;
@@ -175,8 +173,6 @@ body {
   color: $white;
 }
 
-// STYLES USED ON BOTH HOME AND ABOUT PAGES:
-
 .landing {
   height: 75vh;
   display: flex;
@@ -269,8 +265,6 @@ body {
   }
 }
 
-// HOME PAGE STYLES:
-
 .index__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -321,8 +315,6 @@ body {
   }
 
 }
-
-// ABOUT PAGE STYLES:
 
 .about__grid {
   display: grid;
@@ -427,8 +419,6 @@ body {
     margin: $spacer-s 0;
   }
 }
-
-// CONTACT PAGE
 
 .contact__main {
   width: 95%;
