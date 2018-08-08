@@ -43,7 +43,7 @@
 
 ##### Custom JavaScript
 - Used the JS Modal developed in class as my custom JavaScript. The modal was used for my `Sign In` link in my navigation on all pages.
-- Used the disable button JavaScript developed during class to disable the submit button on my Contact page. I also incorporated the code Brittany shared during her presentation for changing the submit button back to disabled if you hit the reset button.
+- Used the disable button JavaScript developed during class to disable the submit button on my Contact page and Sign In modal. I also incorporated the code Brittany shared during her presentation for changing the submit button back to disabled if you hit the reset button.
 
 ##### Plugin 1
 - [Backstretch](http://www.jquery-backstretch.com/): Used this plugin for the background image of my entire Contact page. I also used it on images in a `.landing` section of both my Home and About pages.
