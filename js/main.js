@@ -57,22 +57,50 @@ $(function() {
   })
 });
 
-// JS to Disable Submit button
+//To disable submit button on Sign In Modal
 
 $(function(){
-  $('.input').keyup(function() {
+  $('#form2 .input').keyup(function() {
 
     var empty = false;
-    $('.input').each(function(){
+    $('#form2 .input').each(function(){
       if ($(this).val() == '') {
         empty = true;
       }
     });
 
     if (empty) {
-      $('#submit').attr('disabled', 'disabled').hasClass('.button--disabled').removeClass('button--primary');
+      $('#submit2').hasClass('button--disabled');
+    } else {
+      $('#submit2').removeAttr('disabled').addClass('button--primary').removeClass('button--disabled');
+    }
+  });
+
+  $('#reset2').click(function() {
+    $('#submit2').attr('disabled', true).addClass('button--disabled').removeClass('button--primary');
+  });
+}());
+
+// JS to Disable Submit button - code from class and included code from Brittany to for reset button (she shared during the presentation)
+
+$(function(){
+  $('#form .input').keyup(function() {
+
+    var empty = false;
+    $('#form .input').each(function(){
+      if ($(this).val() == '') {
+        empty = true;
+      }
+    });
+
+    if (empty) {
+      $('#submit').hasClass('button--disabled');
     } else {
       $('#submit').removeAttr('disabled').addClass('button--primary').removeClass('button--disabled');
     }
   });
-})()
+
+  $('#reset').click(function() {
+    $('#submit').attr('disabled', true).addClass('button--disabled').removeClass('button--primary');
+  });
+}());

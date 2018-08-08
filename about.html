@@ -22,13 +22,13 @@
               	<i class="fas fa-bars"></i>
             </div>
           </div>
-            <ul class="menu">
-              <li class="menu--item"><a href="index.html"><i class="fa fa-fw fa-home"></i>HOME</a></li>
-              <li class="menu--item"><a href="about.html"><i class="fas fa-info-circle"></i>ABOUT</a></li>
-              <li class="menu--item"><a href="contact.html"><i class="fa fa-fw fa-envelope"></i>CONTACT</a></li>
-              <li class="menu--item modal__trigger-btn"><a href="#"><i class="fa fa-fw fa-user"></i>SIGN IN</a></li>
-            </ul>
-          </nav>
+          <ul class="menu">
+            <li class="menu--item"><a href="index.html"><i class="fa fa-fw fa-home"></i> HOME</a></li>
+            <li class="menu--item"><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a></li>
+            <li class="menu--item"><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> CONTACT</a></li>
+            <li class="menu--item modal__trigger-btn"><a href="#"><i class="fa fa-fw fa-user"></i> SIGN IN</a></li>
+          </ul>
+        </nav>
         <div>
           <div class="modal" aria-hidden="true">
             <div class="modal__container">
@@ -45,10 +45,10 @@
                 <input name="password" type="text" placeholder="password" class="input modal__input"/>
                 <ul class="modal__action-list">
                   <li class="modal__action-list__item">
-                    <button class="button--primary">Submit</button>
+                    <input class="button button--disabled" value="Submit" type="submit" id="submit"/>
                   </li>
                   <li class="modal__action-list__item">
-                    <button class="button--secondary modal__close">Cancel</button>
+                    <input class="button button--secondary" value="Reset" type="reset" id="reset"/>
                   </li>
                 </ul>
               </form>
