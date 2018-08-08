@@ -1,4 +1,3 @@
-
 // JQuery and CSS animation Hamburger Nav
 
 $(function() {
