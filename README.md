@@ -7,15 +7,15 @@
 [Website Link](http://www.justbelievedesigns.com/project-2_culbreath-jackie/)
 
 #### Link to W3C's Validator
-[W3C Validator Link: Index Page](https://validator.w3.org/nu/#file)
-[W3C Validator Link: About Page](https://validator.w3.org/nu/#file)
-[W3C Validator Link: Contact Page](https://validator.w3.org/nu/#file)
-[W3C Validator Link: CSS stylesheet](http://jigsaw.w3.org/css-validator/validator): States that justify-self and align-self for CSS Grid is not valid properties, however these are valid properties.
+- [W3C Validator Link: Index Page](https://validator.w3.org/nu/#file)
+- [W3C Validator Link: About Page](https://validator.w3.org/nu/#file)
+- [W3C Validator Link: Contact Page](https://validator.w3.org/nu/#file)
+- [W3C Validator Link: CSS stylesheet](http://jigsaw.w3.org/css-validator/validator): States that justify-self and align-self for CSS Grid is not valid properties, however these are valid properties.
 
 #### Link to HTML5 Outliner
-[HTML5 Outliner: Home Page](https://gsnedders.html5.org/outliner/process.py)
-[HTML5 Outliner: About Page](https://gsnedders.html5.org/outliner/process.py)
-[HTML5 Outliner: About Page](https://gsnedders.html5.org/outliner/process.py)
+- [HTML5 Outliner: Home Page](https://gsnedders.html5.org/outliner/process.py)
+- [HTML5 Outliner: About Page](https://gsnedders.html5.org/outliner/process.py)
+- [HTML5 Outliner: About Page](https://gsnedders.html5.org/outliner/process.py)
 
 #### Instructions on how to view
 1. `git clone` the repository to view it locally.
