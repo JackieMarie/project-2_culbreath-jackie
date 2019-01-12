@@ -4,7 +4,7 @@
 [GitHub Link](https://github.com/JackieMarie/project-2_culbreath-jackie)
 
 #### Link to website
-[Website Link](http://www.justbelievedesigns.com/project-2_culbreath-jackie/)
+[Website Link](http://www.justbelievedesigns.com/project-2/)
 
 #### Link to W3C's Validator
 - [W3C Validator Link: Home Page](https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.justbelievedesigns.com%2Fproject-2%2Findex.html)
